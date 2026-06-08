@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why do I need a Coach — rrealpath</title>
+  <meta name="description" content="The 3 most compelling reasons for choosing a coach">
+  <link rel="canonical" href="https://rrealpath.com/article-01">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RN326XK8ME');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1814;
+      --bg: #ffffff;
+      --accent: #C8392B;
+      --muted: #7a7670;
+      --rule: #e8e5e0;
+      --serif: 'Cormorant Garamond', serif;
+      --sans: 'Jost', sans-serif;
+      --mono: 'DM Mono', monospace;
+    }
+
+    html { font-size: 16px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { border-bottom: 1px solid var(--rule); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: 0.01em; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 400; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap { max-width: 700px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+
+    /* HEADER */
+    .article-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 1.75rem; }
+    .article-meta span { color: var(--accent); }
+    h1.article-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; line-height: 1.15; color: var(--ink); margin-bottom: 1rem; }
+    .article-intro { font-family: var(--serif); font-style: italic; font-size: 1.15rem; line-height: 1.65; color: var(--ink); margin-bottom: 0; }
+
+    /* LEAD IMAGE */
+    .lead-image-wrap { width: 100%; margin: 1.75rem 0 0; }
+    .lead-image-wrap img { width: 100%; height: auto; display: block; }
+    .lead-caption { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0 1.75rem; border-bottom: 1px solid var(--rule); margin-bottom: 2.5rem; }
+    .lead-caption-bar { width: 2px; height: 1em; background: var(--accent); flex-shrink: 0; }
+    .lead-caption-name { font-family: var(--serif); font-style: italic; font-size: 0.88rem; color: var(--ink); }
+    .lead-caption-credit { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.03em; }
+
+    /* BODY TEXT */
+    .article-body { font-family: var(--sans); font-size: 1rem; line-height: 1.85; color: var(--ink); }
+    .article-body p { margin-bottom: 1.4rem; }
+    .article-body h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; color: var(--ink); margin: 2.5rem 0 1rem; }
+    .article-body hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+    /* SHARE BAR */
+    .share-bar { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); display: flex; align-items: center; gap: 1.25rem; }
+    .share-label { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+    .share-link { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
+    .share-link:hover { color: var(--accent); }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--rule); padding: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { gap: 1.25rem; }
+      .article-wrap { padding: 2.5rem 1.25rem 4rem; }
+      footer { padding: 1.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">rrealpath</a>
+    <ul class="nav-links">
+      <li><a href="/thinking">Thinking</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/coaching">Coaching</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article class="article-wrap">
+
+      <p class="article-meta"><span>No. 01</span> &nbsp;·&nbsp; 18 May 2026</p>
+
+      <h1 class="article-title">Why do I need a Coach</h1>
+
+      <p class="article-intro">The 3 most compelling reasons for choosing a coach</p>
+
+      <div class="lead-image-wrap">
+        <img src="/images/article-01-lead.jpg" alt="Highway and Bridge, Holly Ridge, NC">
+      </div>
+      <div class="lead-caption">
+        <div class="lead-caption-bar"></div>
+        <span class="lead-caption-name">Highway and Bridge, Holly Ridge, NC</span>
+        <span class="lead-caption-credit">Curtis Adams</span>
+      </div>
+
+      <div class="article-body">
+
+        <p>Why would anyone need a coach? If you're reading this, it's highly likely that you're asking yourself this question, or that you're at least interested in theory. While there are no hard and fast answers, there are some good reasons to engage a coach, and there are a few ways to positively influence the results and outcomes.</p>
+
+        <p>Let's focus on the clearest and most compelling reasons for choosing a coach.</p>
+
+        <h2>#1 Crisis / Opportunity</h2>
+
+        <p>Crisis and Opportunity are frequently perceived as 2 sides of the same coin. The ancient Greek root of crisis is a verb for the act of separating, deciding, choosing, or judging, with the opportunity of achieving a turning point. In our present day understanding, a crisis forces action; it presents an ultimatum to either address the issue or to face undesirable consequences.</p>
+
+        <p>There is no better reason to want a coach. If we've arrived at a crisis, it's highly likely that we've avoided or overlooked a lot of signals. We were, perhaps, procrastinating out of fear; we may have tried our best but been ineffective at resolving things.</p>
+
+        <p>Particularly in business, crises have a tendency to breed other problems. The right coaching engagement would see the resolution of the crisis but also realise some silver linings. If we consider our inability, under duress, to see a situation for what it is, then we can also conclude that the right course of action can do more than just restore things.</p>
+
+        <p>A skilled coach will surface root causes, and the process of fixing things –for lack of a better term– will generally result in innovations and improvements, eliminating risks and strengthening the business for the future. Such turning points can yield positive surprises.</p>
+
+        <p>Whether we are navigating a crisis or opportunity, business frequently takes us into unfamiliar territory. We can access expertise for things we don't know, and we can protect ourselves from what we don't know that we don't know. A coach that brings domain specific domain experience improves your chances from the outset. No contest.</p>
+
+        <h2>#2 Stuck</h2>
+
+        <p>Whether we're feeling stuck within ourselves, or whether we have worked ourselves into business dead ends, stuck is stuck. Being stuck is often a softer precursor of crisis/opportunity. In this case there is no ultimatum, and there is no immediate sense of urgency, but clearly things haven't developed in a way that is satisfying.</p>
+
+        <p>Our business may still be operating, it may still be profitable, it may still be growing, but somehow our perception of the future is less than positive, or our understanding of desired outcomes is unclear. We are dealing with the force of desire, which is fundamental to aspiration, motivation and ambition. When some aspect of desire is thwarted, then effort stops flowing naturally and results feel less rewarding.</p>
+
+        <p>A very large percentage of the population lives their entire lives feeling stuck, so much so that a sense of resignation is considered to be a state of normality for many people, whether they are conscious of it or not. If we consider this strictly from a numerical perspective, getting unstuck is a luxury. So we may ask ourselves, what is the cost of getting unstuck, or what is the opportunity cost of just staying stuck.</p>
+
+        <p>In many ways the life coaching movement grew out of the emerging desire of people wanting to be fulfilled. It grew out of the experience that having a high income and owning a beautiful house was not enough. Surviving means continuing to operate without aspiration, and not wanting to live life feeling stuck is a level up. It means that our needs must be met first, but that the act of fulfilling our needs should be emotionally satisfying.</p>
+
+        <p>The opportunity cost of staying stuck is to live a life of survival. We give up our higher aspirations and we forfeit the opportunity to have an audacious plan and to build a future we truly desire. We default, instead, to the familiar and regular day-to-day living. In doing so, we give up the more evolved aspects of our nature. We give up the will to imagine, to explore and to live with a sense of adventure.</p>
+
+        <h2>#3 End of a Cycle</h2>
+
+        <p>Whereas being stuck is a softer yet discernible precursor of crisis/opportunity, the end of a cycle frequently escapes diagnosis. When we speak of the end of a cycle we are describing something reaching its natural end. Whatever we've been doing and whatever we've been identified with has served its useful purpose and reached its natural end. Career changes and life changes come to mind.</p>
+
+        <p>We may understand the outlines of the next chapter, but we haven't been there yet, and our plans are generally proportional to our lived experience. Surprises and upsets are to be expected, and when income and continuity are at stake, these types of unknowns carry a heavier risk.</p>
+
+        <p>When someone feels like they have reached the end of a cycle, the potential changes they might choose to make could be far reaching. An entrepreneur may want to step out of leading his company to live in a different country and hand over the reins. A tech executive may want to step away from business development, a role he excelled at, to return to doing product development, something he feels more passionate about.</p>
+
+        <p>These kinds of changes can be far-reaching, and transitioning is almost always a rocky road. A coach that has worked extensively with leaders undergoing these kinds of transitions, is invaluable. Experience improves the odds materially.</p>
+
+        <h2>#4</h2>
+
+        <p>#4 is a catchall for all other reasons for engaging a coach, and for reasons that may not as clearly validate the need for a coach. It's important to be concise about the high-value applications of business coaching, and these applications should headline the need for coaching and exemplify the extraordinary results that people aspire to and achieve when they engage a coach.</p>
+
+        <p>#1 - #3 attempt to define these high-value applications, and to demonstrate to the reader that they can be reasonably explained and clearly understood, thereby serving as a guideline for choosing to engage a coach. They represent the rule and the well-trodden path. Results are predictable and valuable, and they are accessible to almost anyone who is open and desiring.</p>
+
+        <p>At the same time we must insist that nothing should be ruled out; the ability to achieve results through coaching often defies definition. The well-trodden paths provide the proof, but the roads less frequently traveled are the exceptions that prove the rule.</p>
+
+        <hr>
+
+        <p>Coaching is ultimately about growth. Coaches get their greatest inspiration from seeing their own clients excel, and from being a part of that success. Conversely, it's frequently an experience of being constrained, of being held back, that is the motivator, and that initiates the coaching engagement.</p>
+
+        <p>No matter where you're starting from or how you define your outcomes, growth is always the product. A coach's fundamental purpose is to see you grow.</p>
+
+      </div>
+
+      <div class="share-bar">
+        <span class="share-label">Share</span>
+        <a class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://rrealpath.com/article-01" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-link" href="https://twitter.com/intent/tweet?url=https://rrealpath.com/article-01" target="_blank" rel="noopener">X</a>
+        <a class="share-link" href="#" onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy link',2000); return false;">Copy link</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <span class="footer-copy">© 2026 rrealpath</span>
+    <nav class="footer-links">
+      <a href="/thinking">Thinking</a>
+      <a href="/about">About</a>
+      <a href="/coaching">Coaching</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

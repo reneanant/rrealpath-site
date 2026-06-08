@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What you can't see — rrealpath</title>
+  <meta name="description" content="How proximity, pace, and scale shape our perception of reality">
+  <link rel="canonical" href="https://rrealpath.com/article-02">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RN326XK8ME');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1814;
+      --bg: #ffffff;
+      --accent: #C8392B;
+      --muted: #7a7670;
+      --rule: #e8e5e0;
+      --serif: 'Cormorant Garamond', serif;
+      --sans: 'Jost', sans-serif;
+      --mono: 'DM Mono', monospace;
+    }
+
+    html { font-size: 16px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { border-bottom: 1px solid var(--rule); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: 0.01em; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 400; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap { max-width: 700px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+
+    /* HEADER */
+    .article-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 1.75rem; }
+    .article-meta span { color: var(--accent); }
+    h1.article-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; line-height: 1.15; color: var(--ink); margin-bottom: 1rem; }
+    .article-intro { font-family: var(--serif); font-style: italic; font-size: 1.15rem; line-height: 1.65; color: var(--ink); margin-bottom: 0; }
+
+    /* LEAD IMAGE */
+    .lead-image-wrap { width: 100%; margin: 1.75rem 0 0; }
+    .lead-image-wrap img { width: 100%; height: auto; display: block; }
+    .lead-caption { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0 1.75rem; border-bottom: 1px solid var(--rule); margin-bottom: 2.5rem; }
+    .lead-caption-bar { width: 2px; height: 1em; background: var(--accent); flex-shrink: 0; }
+    .lead-caption-name { font-family: var(--serif); font-style: italic; font-size: 0.88rem; color: var(--ink); }
+    .lead-caption-credit { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.03em; }
+
+    /* BODY TEXT */
+    .article-body { font-family: var(--sans); font-size: 1rem; line-height: 1.85; color: var(--ink); }
+    .article-body p { margin-bottom: 1.4rem; }
+    .article-body h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; color: var(--ink); margin: 2.5rem 0 1rem; }
+    .article-body hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+    /* SHARE BAR */
+    .share-bar { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); display: flex; align-items: center; gap: 1.25rem; }
+    .share-label { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+    .share-link { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
+    .share-link:hover { color: var(--accent); }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--rule); padding: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { gap: 1.25rem; }
+      .article-wrap { padding: 2.5rem 1.25rem 4rem; }
+      footer { padding: 1.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">rrealpath</a>
+    <ul class="nav-links">
+      <li><a href="/thinking">Thinking</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/coaching">Coaching</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article class="article-wrap">
+
+      <p class="article-meta"><span>No. 02</span> &nbsp;·&nbsp; 24 May 2026 &nbsp;·&nbsp; Blind Spots / Breakthroughs</p>
+
+      <h1 class="article-title">What you can't see</h1>
+
+      <p class="article-intro">How proximity, pace, and scale shape our perception of reality</p>
+
+      <div class="lead-image-wrap">
+        <img src="/images/article-02-lead.jpg" alt="Misty Mountain Ranges at Dawn, Querétaro">
+      </div>
+      <div class="lead-caption">
+        <div class="lead-caption-bar"></div>
+        <span class="lead-caption-name">Misty Mountain Ranges at Dawn, Querétaro</span>
+        <span class="lead-caption-credit">Oscar Garcia-Medina</span>
+      </div>
+
+      <div class="article-body">
+
+        <h2>#1 Too close</h2>
+
+        <p>The closer you are to something, the harder it is to see it clearly. Whenever we let people or situations get close, we start to regard them with an attitude that is personal. When a situation becomes familiar, we drop our defenses and we surrender the habit of thinking critically. When a relationship becomes personal, we are less likely to weigh a person's speech or actions.</p>
+
+        <p>When we articulate the pitfalls of letting people and situations close, it is necessary to distinguish the commitment to thinking clearly from the mindset of mistrust. It is easy to mistake clear thinking for mistrust. They are not the same thing. Thinking clearly always increases trust. When we let things become personal and familiar, we are contributing to the possibility that we become a liability, and in this way trust diminishes.</p>
+
+        <p>If we value the integrity of seeing things clearly, then we must consider the right distance to keep. This is not a natural balance to strike. We need to contemplate our intended attitude and revisit our behaviour. It requires attentiveness, and if there is a lot at stake, a level of vigilance.</p>
+
+        <p>When we are on the inside we are immersed, and our surroundings become familiar. Routines start to take hold and we start to become a part of the organisation in which we participate. It is advantageous to stay impartial. Keeping a part of ourselves on the outside means that we maintain our objectivity. In this way, we always have a better chance of seeing things clearly.</p>
+
+        <h2>#2 Too fast</h2>
+
+        <p>The faster we move, the farther forward we set our sights, which means we are forced to follow a path that has been pre-established.</p>
+
+        <p>Two of the fundamental disciplines of business are planning and execution. In the real world these disciplines run in parallel, and with considerable overlap. While we execute the previous plan, we concurrently develop the new plan. Progress, simply put, comes from doing and observing at the same time. The faster we move, the less we take notice of the present moment, and the less opportunity we have to observe problems and innovate. We are blind to that opportunity.</p>
+
+        <p>While this is true on an individual basis, it is even more true from an organisational perspective. In a complex organisation, information needs to travel up and down. Without giving attention to the ideal pace of things, without setting aside time to do execution and analysis in tandem, improvements aren't realised. The new planning cycle does not reap the benefits of the current cycle of execution.</p>
+
+        <h2>#3 Too big</h2>
+
+        <p>When a business spans multiple divisions, commercial entities and locations, with thousands of employees or more, not being able to see becomes an accepted norm of how business leaders operate. For a big entity to function, it is broken down into parts, each of which exists within its own set of rules and preferences, also being shaped by its own goals.</p>
+
+        <p>Each part develops its own relationships with the other separate parts, and also with the big entity as a whole. These relationships are born of necessity, and are negotiated verbally, or are dictated by relative power and influence. As a participant in the big entity, we see and understand our own part well, and we also understand something about the separate parts with which we interact. Beyond this we are generally blind, and what we believe we understand is shaped by broadcasts (the opinions and interpretations of endorsed and recognised participants within the big entity) and through hearsay.</p>
+
+        <p>The structured and trusted broadcasts of facts and their relevant interpretations are vital. Without such broadcasts, without the trust in them, participants can not see beyond their own context of related parts.</p>
+
+        <p>These broadcasts are typically extensions of the fundamental purposes and principles by which an entity orients and organises itself. The more clearly these are articulated, and the more strongly the broadcasts align with them, the more clearly people can see beyond their own immediate context. In this way people are able to see and understand the whole, and can shape and align the parts towards it.</p>
+
+        <hr>
+
+        <p>What we can't see is a function of our attention. What we see is formed by the depth and breadth of our vision, and this, in turn, is a function of conscious effort. If we want to see clearly, if we want to see more, then we must exert an effort and we must train ourselves.</p>
+
+        <p>Too close, too fast, and too big are the hardships of our physical reality. We are a small piece in an infinitely large field, and if we want to engage skillfully with it, we need to gain perspective. The best way to do this is to start from the ground up. We should learn to crawl before we walk, and learn to walk before we run.</p>
+
+        <p>We have our default vision, and understanding how this default works is the best starting point; it corresponds to the crawl. The more we observe how we regularly and automatically see things, the more able we become at entertaining alternative perspectives, and so we start to become a mix of interchanging and interacting perspectives. We might call this 'seeing double'; we are starting to learn how to walk.</p>
+
+        <p>The more we continue to practice, the more we are naturally able to see and understand other perspectives. Initially we oscillate strongly, even violently, between nursing our own inner points of view and considering those of others.</p>
+
+        <p>Eventually, we start to live outside of our own points of view more permanently and begin to slowly approach the understanding and experience of the business as a whole. This is akin to running. This is how capable operators and business leaders work. This is how they are able to navigate complexity. They sacrifice their own little selves and points of view, and they choose to live and work within a greater understanding of the whole.</p>
+
+      </div>
+
+      <div class="share-bar">
+        <span class="share-label">Share</span>
+        <a class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://rrealpath.com/article-02" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-link" href="https://twitter.com/intent/tweet?url=https://rrealpath.com/article-02" target="_blank" rel="noopener">X</a>
+        <a class="share-link" href="#" onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy link',2000); return false;">Copy link</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <span class="footer-copy">© 2026 rrealpath</span>
+    <nav class="footer-links">
+      <a href="/thinking">Thinking</a>
+      <a href="/about">About</a>
+      <a href="/coaching">Coaching</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

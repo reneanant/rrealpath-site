@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thinking — rrealpath</title>
+  <meta name="description" content="Essays on leadership, business culture, and the real work of operators.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RN326XK8ME');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1814;
+      --bg: #ffffff;
+      --accent: #C8392B;
+      --muted: #7a7670;
+      --rule: #e8e5e0;
+      --serif: 'Cormorant Garamond', serif;
+      --sans: 'Jost', sans-serif;
+      --mono: 'DM Mono', monospace;
+    }
+
+    html { font-size: 16px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { border-bottom: 1px solid var(--rule); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: 0.01em; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 400; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links a[aria-current="page"] { color: var(--ink); }
+
+    /* PAGE */
+    .page-wrap { max-width: 700px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+    .page-head { margin-bottom: 3rem; }
+    .page-head h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 600; line-height: 1.15; margin-bottom: 0.75rem; }
+    .page-head p { font-family: var(--sans); font-size: 0.95rem; color: var(--muted); line-height: 1.65; max-width: 480px; }
+
+    /* ARTICLE LIST */
+    .article-list { list-style: none; }
+    .article-list li { border-top: 1px solid var(--rule); }
+    .article-list li:last-child { border-bottom: 1px solid var(--rule); }
+    .article-list a { display: grid; grid-template-columns: 3.5rem 1fr auto; align-items: baseline; gap: 0 1.5rem; padding: 1.5rem 0; text-decoration: none; color: var(--ink); transition: opacity 0.2s; }
+    .article-list a:hover { opacity: 0.65; }
+    .art-num { font-family: var(--mono); font-size: 0.72rem; color: var(--accent); letter-spacing: 0.06em; padding-top: 0.15rem; }
+    .art-text { }
+    .art-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; line-height: 1.25; color: var(--ink); margin-bottom: 0.2rem; }
+    .art-subtitle { font-family: var(--sans); font-size: 0.82rem; color: var(--muted); line-height: 1.4; }
+    .art-date { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.04em; white-space: nowrap; padding-top: 0.15rem; }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--rule); padding: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { gap: 1.25rem; }
+      .page-wrap { padding: 2.5rem 1.25rem 4rem; }
+      .article-list a { grid-template-columns: 2.75rem 1fr; grid-template-rows: auto auto; }
+      .art-date { grid-column: 2; margin-top: 0.25rem; }
+      footer { padding: 1.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">rrealpath</a>
+    <ul class="nav-links">
+      <li><a href="/thinking" aria-current="page">Thinking</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/coaching">Coaching</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="page-wrap">
+      <div class="page-head">
+        <h1>Thinking</h1>
+        <p>Essays on leadership, business culture, and the real work of operators. Published twice a month.</p>
+      </div>
+
+      <ul class="article-list">
+
+        <li>
+          <a href="/article-04">
+            <span class="art-num">No. 04</span>
+            <span class="art-text">
+              <span class="art-title">What Makes a Leader Sufficient</span>
+              <span class="art-subtitle">Overcoming inertia and beating the odds through knowledge, language, and leverage</span>
+            </span>
+            <span class="art-date">8 June 2026</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/article-03">
+            <span class="art-num">No. 03</span>
+            <span class="art-text">
+              <span class="art-title">The Pathology of Relationships</span>
+              <span class="art-subtitle">How attention and energy influence the way we interact</span>
+            </span>
+            <span class="art-date">1 June 2026</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/article-02">
+            <span class="art-num">No. 02</span>
+            <span class="art-text">
+              <span class="art-title">What you can't see</span>
+              <span class="art-subtitle">How proximity, pace, and scale shape our perception of reality</span>
+            </span>
+            <span class="art-date">24 May 2026</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="/article-01">
+            <span class="art-num">No. 01</span>
+            <span class="art-text">
+              <span class="art-title">Why do I need a Coach</span>
+              <span class="art-subtitle">The 3 most compelling reasons for choosing a coach</span>
+            </span>
+            <span class="art-date">18 May 2026</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <span class="footer-copy">© 2026 rrealpath</span>
+    <nav class="footer-links">
+      <a href="/thinking">Thinking</a>
+      <a href="/about">About</a>
+      <a href="/coaching">Coaching</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

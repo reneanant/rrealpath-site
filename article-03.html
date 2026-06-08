@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pathology of Relationships — rrealpath</title>
+  <meta name="description" content="How attention and energy influence the way we interact">
+  <link rel="canonical" href="https://rrealpath.com/article-03">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Jost:wght@300;400;500&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RN326XK8ME');
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1814;
+      --bg: #ffffff;
+      --accent: #C8392B;
+      --muted: #7a7670;
+      --rule: #e8e5e0;
+      --serif: 'Cormorant Garamond', serif;
+      --sans: 'Jost', sans-serif;
+      --mono: 'DM Mono', monospace;
+    }
+
+    html { font-size: 16px; }
+    body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-weight: 400; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+    /* NAV */
+    nav { border-bottom: 1px solid var(--rule); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-logo { font-family: var(--serif); font-size: 1.25rem; font-weight: 600; color: var(--ink); text-decoration: none; letter-spacing: 0.01em; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: 0.8rem; font-weight: 400; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--ink); }
+
+    /* ARTICLE LAYOUT */
+    .article-wrap { max-width: 700px; margin: 0 auto; padding: 4rem 2rem 6rem; }
+
+    /* HEADER */
+    .article-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.08em; margin-bottom: 1.75rem; }
+    .article-meta span { color: var(--accent); }
+    h1.article-title { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; line-height: 1.15; color: var(--ink); margin-bottom: 1rem; }
+    .article-intro { font-family: var(--serif); font-style: italic; font-size: 1.15rem; line-height: 1.65; color: var(--ink); margin-bottom: 0; }
+
+    /* LEAD IMAGE */
+    .lead-image-wrap { width: 100%; margin: 1.75rem 0 0; }
+    .lead-image-wrap img { width: 100%; height: auto; display: block; }
+    .lead-caption { display: flex; align-items: center; gap: 0.75rem; padding: 0.5rem 0 1.75rem; border-bottom: 1px solid var(--rule); margin-bottom: 2.5rem; }
+    .lead-caption-bar { width: 2px; height: 1em; background: var(--accent); flex-shrink: 0; }
+    .lead-caption-name { font-family: var(--serif); font-style: italic; font-size: 0.88rem; color: var(--ink); }
+    .lead-caption-credit { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.03em; }
+
+    /* BODY TEXT */
+    .article-body { font-family: var(--sans); font-size: 1rem; line-height: 1.85; color: var(--ink); }
+    .article-body p { margin-bottom: 1.4rem; }
+    .article-body h2 { font-family: var(--serif); font-size: 1.5rem; font-weight: 600; color: var(--ink); margin: 2.5rem 0 1rem; }
+    .article-body hr { border: none; border-top: 1px solid var(--rule); margin: 2.5rem 0; }
+
+    /* SHARE BAR */
+    .share-bar { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rule); display: flex; align-items: center; gap: 1.25rem; }
+    .share-label { font-family: var(--mono); font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+    .share-link { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s; }
+    .share-link:hover { color: var(--accent); }
+
+    /* FOOTER */
+    footer { border-top: 1px solid var(--rule); padding: 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+    .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
+    .footer-links { display: flex; gap: 1.5rem; }
+    .footer-links a { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; letter-spacing: 0.05em; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 640px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { gap: 1.25rem; }
+      .article-wrap { padding: 2.5rem 1.25rem 4rem; }
+      footer { padding: 1.5rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-logo">rrealpath</a>
+    <ul class="nav-links">
+      <li><a href="/thinking">Thinking</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/coaching">Coaching</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article class="article-wrap">
+
+      <p class="article-meta"><span>No. 03</span> &nbsp;·&nbsp; 1 June 2026 &nbsp;·&nbsp; Relationships in Business</p>
+
+      <h1 class="article-title">The Pathology of Relationships</h1>
+
+      <p class="article-intro">How attention and energy influence the way we interact</p>
+
+      <div class="lead-image-wrap">
+        <img src="/images/article-03-lead.jpg" alt="Misty Mountains at Sunrise">
+      </div>
+      <div class="lead-caption">
+        <div class="lead-caption-bar"></div>
+        <span class="lead-caption-name">Misty Mountains at Sunrise</span>
+        <span class="lead-caption-credit">Septimiu Lupea</span>
+      </div>
+
+      <div class="article-body">
+
+        <p>Relationships come in two forms. We have relationships with people — personal ones, functional ones, and everything in between. And we have relationships with ideas — with the things we believe, the work we do, the purposes we organise our lives around. In both cases, what we are really describing is a relationship with ourselves.</p>
+
+        <p>The question here is not what makes relationships work. It is why we keep going when they have stopped.</p>
+
+        <hr>
+
+        <p>Most people only discover that a relationship has stopped working long after it stopped working. What felt consistent, what instilled trust and comfort, starts to feel less than perfect — and yet we continue as if everything were intact. The effects reach further than the relationship itself; they colour other areas of our lives in ways we don't always connect to the source.</p>
+
+        <p>The signs are recognisable: the company of a trusted colleague is not as comforting as it used to be; your place of work is the same, but something happened that has you feel less empowered than you used to; the purpose you gave so much of your life to, and which gave you energy and inspiration in return, no longer propels you to action.</p>
+
+        <p>Things are moving along, the relationship is developing positively, and then something starts to change. At first it is insignificant and we simply look past it. Some more time passes, the issue persists and is now more pronounced, and yet we continue to look past it. Some more time passes still, and now the issue begins to obstruct the normal course of things, and yet we still choose to look past it.</p>
+
+        <p>Eventually a break occurs. And though we have sensed the underlying issue for some time, it is only at this stage that it has our full attention. While it was set aside it created an underlying sense of discomfort, but now we feel a pronounced effect and are fully confronted by it.</p>
+
+        <p>To understand the pathology of looking past an issue, we would always begin at the breakdown — the moment at which the problem is fully acknowledged, appearances have been dismantled, and the underlying truth has revealed itself. From here we can start to look back.</p>
+
+        <p>What is remarkable is our ability to ignore the signs and continue as if nothing has changed — to be indifferent, to be powerless, and to remain so indefinitely. It is not the reasons for the relationship failing that interest us here. It is the pathology of ignoring what we already know.</p>
+
+        <h2>#1 New Beginnings</h2>
+
+        <p>We start relationships because we want to be connected. We meet people and are exposed to new ideas and we engage with them because we want to. Sometimes we do so because we feel we need to. We experience attraction, the free and unencumbered kind and also the attached and dependent kind, and we act on our desire to gain something from the thing we are attracted to.</p>
+
+        <p>Relationships have lifespans and phases, and new beginnings are a time of opportunity. Novelty is refreshing and enlivening, and while we get oriented we are more attentive, more flexible and even more forgiving. We are also mostly free of entrenched feelings or patterned reactions.</p>
+
+        <p>It is during these introductory phases that we can observe how things take form. By engaging with a person or an idea, we bring form to what was initially formless. We make observations about people's behaviour, about the things they say and the ways in which they react; we see the ways in which they treat others, and how they behave towards us. As these observations start to build up, and as the evidence accumulates, we start to make some decisions.</p>
+
+        <p>Our original state of openness and flexibility is gradually replaced by signposts and the first of many boundaries, both formal and informal, both implicit and explicit. If we are diligent we aggregate the evidence into 'maybe boxes' and hold them there while we continue to engage and observe. If we tend to be impulsive, we close these boxes and decide sooner. Some of these decisions are conscious, and some are unconscious.</p>
+
+        <p>As decision-making accumulates, we move into a different phase and we begin to create a framework for the relationship. Do we get close or do we keep a distance; is it to be something frequent or ad hoc; does it inspire or is it more mundane; are we inclined to make an effort or be non-committal; does it have power over us, or do we have power over it; does it benefit us or do we bestow benefits upon it. The process is complex, but it has a beginning and an end. Gradually the relationship approaches its full form, and we begin to treat it as a known quantity — taking comfort in the familiar, taking less time to assess what happens.</p>
+
+        <h2>#2 Established Patterns</h2>
+
+        <p>Now that things are starting to feel familiar, we find our rhythm and we begin to optimise our level of exertion. What was originally an encounter has gradually become an integrated reality, and while we are rarely conscious of it, we eventually invoke the most central aspect of our personalities: our innate ability to economise.</p>
+
+        <p>The heightened awareness that dominated at the outset is phasing itself out. We have considered the possibilities and the threats, we have done the thinking and the considering we deemed necessary to making decisions, and through this we have brought form to the relationship. This level of attention is demanding and consumes a lot of energy. It is not suited as a daily mode of existence. Compression and automation are necessary.</p>
+
+        <p>Every form has its attributes. A relationship's core attributes are consistency, reciprocity and predictability. Whether it is calm or erratic, regular or ad hoc, friendly or formal, we assume, automatically, that things will remain the same, and we regulate our efforts and attention to keep things moving within the confines of these core attributes.</p>
+
+        <p>The conservation of energy is at the very heart of every relationship. Our real psychological achievement is the continuous refinement of our interactions, reducing the necessity to constantly rethink or reconsider, and thereby freeing up attention. This is a fundamental part of our design. Attention is energy, and the way in which we conduct our relationships is dictated by the laws of economy.</p>
+
+        <h2>#3 Complexity</h2>
+
+        <p>A fully-formed relationship, with its established norms and its energy-efficient interactions, fits neatly within the greater definition of our personality. Each relationship within the personality is a symbiotic entity that contributes to and balances the whole.</p>
+
+        <p>As new relationships are integrated, the whole is modified in an endless series of refinements and adaptations. When new elements are proposed that don't align with the personality, they are marginalised, and when these decisions are made early and definitively, the relationship is precluded. In this way the self-reinforcing whole is protected from the potential menace of outliers.</p>
+
+        <p>If we now view the emergence of something undesirable within an established relationship from the perspective of the integrated whole, we begin to understand the problem. Dealing with a new entrant follows the usual vetting and form-building process, but discovering something new and undesirable in a relationship that is fully-formed creates a new set of problems.</p>
+
+        <p>To reset or realign the energy-efficient, fully-formed relationship, a much larger amount of attention is required. While a new relationship has a simple path, the established one is fraught with dependencies and assumptions, which implies risk.</p>
+
+        <p>If we are to engage in this change process we are faced with a large number of unknowns; while we have trained ourselves in forming new relationships, which follows a well-established path, the reset or realignment is a spontaneous one by comparison. Furthermore, each fully-formed relationship has unique attributes, and so each change is different.</p>
+
+        <p>We can now regard our most perplexing habit, the desire to continue to look past a problem indefinitely, as a desirable solution. When we experience something unexpected, we have the option to overlook it or to park it. When things are moving forward and work is complex, this is often the best option precisely because it conserves energy. If the issue is small, it may never present a problem, or it can be absorbed without consequence. If, however, it starts to compound, then we find ourselves in different territory.</p>
+
+        <hr>
+
+        <p>The problem with unresolved issues is that they eventually start to consume energy. While many issues don't require our attention, the ones that do are always best dealt with early. Every strong operator develops, over time, the ability to tell the difference.</p>
+
+        <p>We always control our own attention. The question is whether we choose to direct it honestly — toward what we sense but have not yet named — or whether we wait for the breakdown to do it for us.</p>
+
+        <p>The most useful thing we can cultivate is not a solution to relationship problems, but an attitude toward them. To hold something — a person, an idea, a way of working — with full engagement and, at the same time, without complete surrender. To remain, on some level, a witness to our own commitments. This is not mistrust. It is the kind of attention that keeps us honest with ourselves, that has us approach relationships with more realism, and that, ultimately, keeps us from being surprised by what we already know.</p>
+
+      </div>
+
+      <div class="share-bar">
+        <span class="share-label">Share</span>
+        <a class="share-link" href="https://www.linkedin.com/sharing/share-offsite/?url=https://rrealpath.com/article-03" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="share-link" href="https://twitter.com/intent/tweet?url=https://rrealpath.com/article-03" target="_blank" rel="noopener">X</a>
+        <a class="share-link" href="#" onclick="navigator.clipboard.writeText(window.location.href); this.textContent='Copied'; setTimeout(()=>this.textContent='Copy link',2000); return false;">Copy link</a>
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <span class="footer-copy">© 2026 rrealpath</span>
+    <nav class="footer-links">
+      <a href="/thinking">Thinking</a>
+      <a href="/about">About</a>
+      <a href="/coaching">Coaching</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
