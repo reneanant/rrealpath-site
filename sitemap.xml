@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://rrealpath.com/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/coaching</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/coaching" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/coaching" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/coaching" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/resume</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/resume" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/resume" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/resume" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/connect</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/connect" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/connect" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/connect" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/thinking</loc>
+    <lastmod>2026-08-10</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/coaching</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/coaching" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/coaching" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/coaching" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/resume</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/resume" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/resume" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/resume" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/connect</loc>
+    <lastmod>2026-08-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/connect" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/connect" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/connect" />
+  </url>
+
+</urlset>
