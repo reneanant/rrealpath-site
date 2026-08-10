@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600&family=Sarabun:wght@300;400;500&display=swap');
+
+/* ── BILINGUAL HEADING — secondary (alt-language) line ── */
+.bi-alt {
+  display: block;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.35;
+  margin-top: 0.55rem;
+  letter-spacing: 0;
+}
+.hero-headline .bi-alt { font-size: 0.4em; }
+.page-title .bi-alt { font-size: 0.5em; }
+.col-heading .bi-alt { font-size: 0.62em; }
+
+.bi-alt.en { font-family: var(--font-serif); font-style: italic; }
+.bi-alt.th { font-family: 'Noto Serif Thai', serif; font-style: normal; }
+
+/* ── THAI-PAGE TYPOGRAPHY (scoped to <html lang="th">) ── */
+html[lang="th"] body { font-family: 'Sarabun', sans-serif; }
+
+html[lang="th"] .hero-headline,
+html[lang="th"] .page-title,
+html[lang="th"] .col-heading,
+html[lang="th"] .th-serif {
+  font-family: 'Noto Serif Thai', serif;
+  font-weight: 500;
+}
+
+html[lang="th"] .hero-body,
+html[lang="th"] .prose,
+html[lang="th"] .bullet-list li,
+html[lang="th"] .engagement-value,
+html[lang="th"] .challenge p,
+html[lang="th"] .contact-signal p {
+  font-family: 'Sarabun', sans-serif;
+}
+
+html[lang="th"] .contact-signal p { font-style: normal; font-weight: 400; }
+
+/* Thai has no DM Mono glyphs — restyle the mono micro-labels */
+html[lang="th"] .section-label,
+html[lang="th"] .engagement-label {
+  font-family: 'Sarabun', sans-serif;
+}
+html[lang="th"] .engagement-label { text-transform: none; letter-spacing: 0.04em; }
+html[lang="th"] .cta-link {
+  font-family: 'Sarabun', sans-serif;
+  text-transform: none;
+  letter-spacing: 0.03em;
+  font-size: 0.95rem;
+}
+
+/* keep the English secondary line in Cormorant even on Thai pages */
+html[lang="th"] .bi-alt.en { font-family: var(--font-serif); font-style: italic; }
+
+html[lang="th"] .challenge-lead {
+  font-family: 'Noto Serif Thai', serif;
+  font-weight: 500;
+}
+
+/* ── CHALLENGE BLOCKS (Coaching — "Where coaching earns its place") ── */
+.challenge {
+  border-top: 1px solid var(--rule);
+  padding: 1.6rem 0;
+}
+.challenge:last-child { border-bottom: 1px solid var(--rule); }
+
+.challenge-lead {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.challenge p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--ink-mid);
+}
+
+/* ── LANGUAGE SWITCH IN NAV ── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.nav-lang {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  white-space: nowrap;
+}
+.nav-lang a { color: var(--ink-faint); text-decoration: none; transition: color 0.2s; }
+.nav-lang a:hover { color: var(--ink); }
+.nav-lang .current { color: var(--red); }
+.nav-lang .sep { color: var(--ink-faint); }
+
+.nav-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(26, 24, 20, 0.18);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .nav-right { gap: 1rem; }
+  .nav-divider { display: none; }
+}
