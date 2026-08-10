@@ -1,0 +1,5 @@
+# rrealpath.com — allow all crawlers
+User-agent: *
+Allow: /
+
+Sitemap: https://rrealpath.com/sitemap.xml
