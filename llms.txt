@@ -1,0 +1,21 @@
+# rrealpath
+
+> Leadership and executive coaching for a wide range of business challenges in Southeast Asia's cross-cultural work environments. Founded by René Anant Feddersen, based in Chiang Mai, Thailand. Coaching is delivered in Thai, German, or English — the language the leader thinks in. The site is fully bilingual (English and Thai).
+
+## Core pages
+- [Home](https://rrealpath.com/): positioning and overview
+- [Coaching](https://rrealpath.com/coaching): the six areas where coaching earns its place, fluency across contexts, and the engagement structure
+- [Resume](https://rrealpath.com/resume): René Anant Feddersen — experience, how the coaching is grounded, credentials
+- [Connect](https://rrealpath.com/connect): two paths — for leaders/executives, and for HR/people/L&D placing a coach. Contact: coach@rrealpath.com
+- [Thinking](https://rrealpath.com/thinking): editorial writing on decision-making, leadership, relationships, and cross-cultural work
+
+## Thai (ไทย)
+- [หน้าแรก](https://rrealpath.com/th/)
+- [การโค้ช](https://rrealpath.com/th/coaching)
+- [ประวัติ](https://rrealpath.com/th/resume)
+- [ติดต่อ](https://rrealpath.com/th/connect)
+
+## Notes
+- Differentiator: native-speaker fluency in Thai, German and English, and fluency across SME and multinational contexts in Southeast Asia.
+- Cross-cultural framing is a two-sided Thai–Western axis.
+- Contact: coach@rrealpath.com
