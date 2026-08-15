@@ -112,3 +112,88 @@ html[lang="th"] .challenge-lead {
   .nav-right { gap: 1rem; }
   .nav-divider { display: none; }
 }
+
+
+/* ══════════════════════════════════════════════════════════════════
+   HEROES + LEAD IMAGE  (added 14 Aug 2026 — landing + resume rebuild)
+   ══════════════════════════════════════════════════════════════════ */
+
+/* ── Credo / voice hero (landing pull-quote + resume "A place to stand") ── */
+.credo-hero{
+  border-left:2px solid var(--red);
+  padding:0.2rem 0 0.3rem 2rem;
+  margin:0 0 3.5rem;
+  max-width:760px;
+}
+.credo-hero p{
+  font-family:var(--font-serif);
+  font-weight:300;
+  font-size:clamp(1.55rem,2.9vw,2.25rem);
+  line-height:1.42;
+  color:var(--ink);
+  letter-spacing:-0.005em;
+  margin:0;
+}
+.credo-hero p + p{margin-top:1.3rem;}
+.credo-hero .lift{color:var(--red);}
+.credo-eyebrow{
+  font-family:var(--font-mono);
+  font-size:0.68rem;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-bottom:1.4rem;
+}
+.credo-eyebrow .alt-en{
+  display:block;
+  font-family:var(--font-serif);
+  font-style:italic;
+  font-size:0.95rem;
+  letter-spacing:0.01em;
+  color:var(--ink-muted);
+  text-transform:none;
+  margin-top:0.4rem;
+}
+
+/* ── Resume hero: portrait beside the credo, bottom-aligned to its rule ── */
+.hero-stand{
+  display:grid;
+  grid-template-columns:270px 1fr;
+  gap:3rem;
+  align-items:end;
+  margin-bottom:1.2rem;
+}
+.hero-stand .credo-hero{margin-bottom:0;max-width:640px;padding-left:1.8rem;}
+.hero-stand .credo-hero p{
+  font-size:clamp(1.3rem,2.1vw,1.72rem);
+  line-height:1.55;
+  color:var(--ink-mid);
+}
+.hero-portrait{width:270px;}
+.hero-portrait img{display:block;width:100%;height:auto;border-radius:3px;}
+.resume-resolve{height:1.2rem;}
+
+/* ── Landing lead image + quiet photographer credit ── */
+.lead-figure{margin:0 0 3.5rem;}
+.lead-figure img{display:block;width:100%;height:auto;}
+.lead-cap{margin-top:0.75rem;padding-left:0.8rem;border-left:2px solid var(--red);}
+.lead-cap .by{
+  font-family:var(--font-mono);
+  font-size:0.68rem;
+  letter-spacing:0.12em;
+  color:var(--ink-faint);
+  text-transform:uppercase;
+}
+
+/* ── Thai typography for the new hero components ── */
+html[lang="th"] .credo-hero p{font-family:'Noto Serif Thai',serif;font-weight:400;}
+html[lang="th"] .hero-stand .credo-hero p{font-size:clamp(1.2rem,1.9vw,1.55rem);line-height:1.75;}
+html[lang="th"] .credo-eyebrow{font-family:'Sarabun',sans-serif;}
+html[lang="th"] .lead-cap .by{font-family:'Sarabun',sans-serif;}
+
+/* ── Responsive ── */
+@media (max-width:720px){
+  .hero-stand{grid-template-columns:1fr;gap:1.4rem;}
+  .hero-portrait{width:190px;}
+  .credo-hero{padding-left:1.3rem;}
+}
