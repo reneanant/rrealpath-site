@@ -380,24 +380,17 @@ section {
 }
 .prose a:hover, .home-lead a:hover { color: var(--red); }
 
-/* Homepage lead — four uniform paragraphs, one font & size, vertically centred */
-.home-hero {
-  min-height: calc(100vh - 72px);
-  display: flex;
-  align-items: center;
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: 2rem clamp(1.5rem, 5vw, 3rem) 3rem;
-}
+/* Homepage — lead image, then four uniform serif paragraphs, one font & size */
+.page-inner--home { padding-top: 4rem; }
 .home-lead { max-width: 640px; }
 .home-lead h1,
 .home-lead p {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(1.3rem, 0.8rem + 1.05vw, 1.7rem);
+  font-size: clamp(1.25rem, 0.85rem + 0.9vw, 1.55rem);
   line-height: 1.5;
   color: var(--ink);
-  margin: 0 0 1.45rem 0;
+  margin: 0 0 1.3rem 0;
 }
 .home-lead p:last-child { margin-bottom: 0; }
 
