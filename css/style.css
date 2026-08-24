@@ -371,6 +371,28 @@ section {
 
 .contact-email:hover { color: var(--red); }
 
+/* Inline body links — on-brand: ink text, vermillion underline */
+.prose a, .home-lead a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--red);
+  transition: color 0.2s;
+}
+.prose a:hover, .home-lead a:hover { color: var(--red); }
+
+/* Homepage lead — four uniform paragraphs, one font and size */
+.home-lead { max-width: 620px; margin: 3.5rem 0; }
+.home-lead h1,
+.home-lead p {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  font-size: clamp(1.4rem, 2.2vw, 1.7rem);
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0 0 1.6rem 0;
+}
+.home-lead p:last-child { margin-bottom: 0; }
+
 /* ── FOOTER ── */
 footer {
   padding: 2rem 3rem;
