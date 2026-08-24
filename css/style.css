@@ -380,16 +380,17 @@ section {
 }
 .prose a:hover, .home-lead a:hover { color: var(--red); }
 
-/* Homepage lead — four uniform paragraphs, one font and size */
-.home-lead { max-width: 620px; margin: 3.5rem 0; }
+/* Homepage — lead image, then four uniform serif paragraphs, one font & size */
+.page-inner--home { padding-top: 4rem; }
+.home-lead { max-width: 640px; }
 .home-lead h1,
 .home-lead p {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: clamp(1.4rem, 2.2vw, 1.7rem);
-  line-height: 1.55;
+  font-size: clamp(1.25rem, 0.85rem + 0.9vw, 1.55rem);
+  line-height: 1.5;
   color: var(--ink);
-  margin: 0 0 1.6rem 0;
+  margin: 0 0 1.3rem 0;
 }
 .home-lead p:last-child { margin-bottom: 0; }
 
