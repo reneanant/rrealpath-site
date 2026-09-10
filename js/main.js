@@ -43,6 +43,9 @@ observer.unobserve(e.target);
 
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
+// -- Favicon: prefer the scalable SVG rr mark where supported
+(function(){ if(document.querySelector('link[rel="icon"][type="image/svg+xml"]')) return; var l=document.createElement('link'); l.rel='icon'; l.type='image/svg+xml'; l.href='/favicon.svg'; document.head.appendChild(l); })();
+
 // ── Footer: site-wide Privacy link (injected; footer markup is per-page)
 (function(){
 var copy = document.querySelector('footer .footer-copy');
