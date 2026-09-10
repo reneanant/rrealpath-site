@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ความเป็นส่วนตัว — rrealpath</title>
+  <meta name="description" content="หน้านี้อธิบายว่าเว็บไซต์เก็บข้อมูลอะไร เพราะเหตุใด และจัดการกับข้อมูลนั้นอย่างไร">
+  <link rel="canonical" href="https://rrealpath.com/th/privacy">
+  <link rel="alternate" hreflang="en" href="https://rrealpath.com/privacy">
+  <link rel="alternate" hreflang="th" href="https://rrealpath.com/th/privacy">
+  <link rel="alternate" hreflang="x-default" href="https://rrealpath.com/privacy">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bilingual.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-RN326XK8ME');
+  </script>
+  <style>
+    /* Thai page: font-family intentionally omitted so bilingual.css applies
+       Noto Serif Thai / Sarabun; line-heights relaxed for Thai. */
+    .article-wrap {
+      max-width: var(--max-wide);
+      padding: 5rem 3rem 6rem;
+    }
+    .article-back {
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      color: var(--ink-faint);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      transition: color 0.2s;
+    }
+    .article-back:hover { color: var(--ink); }
+    .article-title {
+      font-family: 'Noto Serif Thai', serif;
+      font-weight: 600;
+      font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 1.2rem;
+      max-width: 820px;
+    }
+    .article-intro {
+      font-family: 'Noto Serif Thai', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--ink-muted);
+      line-height: 1.75;
+      max-width: 620px;
+      margin-bottom: 2.5rem;
+    }
+    .article-body {
+      max-width: 620px;
+    }
+    .article-body p {
+      font-size: 1rem;
+      color: var(--ink-mid);
+      line-height: 2.0;
+      margin-bottom: 1.5rem;
+    }
+    .article-body h2 {
+      font-family: 'Noto Serif Thai', serif;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: var(--ink);
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      line-height: 1.45;
+    }
+    .article-body h2:first-of-type { margin-top: 0; }
+    .article-body a {
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px solid var(--rule);
+      transition: border-color 0.2s;
+    }
+    .article-body a:hover { border-color: var(--ink); }
+    .article-updated {
+      font-size: 0.78rem;
+      letter-spacing: 0.04em;
+      color: var(--ink-faint);
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+    @media (max-width: 768px) {
+      .article-wrap { padding: 4rem 1.5rem 4rem; }
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href="index.html" class="nav-logo">rreal<span>path</span></a>
+  <div class="nav-right">
+    <ul class="nav-links">
+      <li><a href="/thinking.html">Thinking</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="coaching.html">Coaching</a></li>
+      <li><a href="connect.html">Connect</a></li>
+    </ul>
+    <span class="nav-divider"></span>
+    <span class="nav-lang"><a href="/privacy">EN</a><span class="sep">/</span><span class="current">TH</span></span>
+  </div>
+  <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="nav-drawer" id="nav-drawer">
+  <a href="/thinking.html">Thinking</a>
+  <a href="resume.html">Resume</a>
+  <a href="coaching.html">Coaching</a>
+  <a href="connect.html">Connect</a>
+  <a href="/privacy">EN</a>
+</div>
+
+<main class="page">
+  <div class="article-wrap">
+    <a href="index.html" class="article-back">← หน้าแรก</a>
+    <h1 class="article-title">ความเป็นส่วนตัว</h1>
+    <p class="article-intro">หน้านี้อธิบายว่าเว็บไซต์เก็บข้อมูลอะไร เพราะเหตุใด และจัดการกับข้อมูลนั้นอย่างไร</p>
+    <div class="article-body">
+
+      <h2>การติดต่อเรา</h2>
+      <p>แบบฟอร์มติดต่อ (Connect) เป็นจุดเดียวบนเว็บไซต์นี้ที่คุณกรอกข้อมูลส่วนบุคคล เมื่อคุณส่งข้อความสอบถามเข้ามา ชื่อ อีเมล และข้อความที่คุณกรอกไว้จะถูกส่งผ่าน Web3Forms ซึ่งเป็นบริการที่นำส่งข้อความของคุณไปยัง <a href="mailto:coach@rrealpath.com">coach@rrealpath.com</a> ข้อมูลเหล่านี้ถูกใช้เพื่ออ่านและตอบกลับคำถามของคุณเท่านั้น และจะไม่ถูกนำไปขาย เปิดเผย หรือใช้เพื่อการตลาด</p>
+
+      <h2>การทำความเข้าใจการใช้งานเว็บไซต์ (Google Analytics)</h2>
+      <p>เว็บไซต์นี้ใช้ Google Analytics เพื่อทำความเข้าใจว่าหน้าใดและบทความใดได้รับการอ่าน ผู้เข้าชมเข้ามายังเว็บไซต์ด้วยวิธีใด และเว็บไซต์ทำงานได้ดีเพียงใด โดยรายงานผลในภาพรวม เช่น จำนวนหน้าที่เปิดดู ระยะเวลาที่ใช้ในแต่ละหน้า ตำแหน่งโดยประมาณ และอุปกรณ์ที่ใช้ มากกว่าการระบุตัวตนของคุณเป็นรายบุคคล ข้อมูลนี้ช่วยให้เราตัดสินใจได้ว่าจะเขียนเรื่องใดต่อไป และจะปรับปรุงเว็บไซต์ให้ดีขึ้นได้อย่างไร</p>
+
+      <h2>ข้อมูลเชิงลึกของเซสชัน (Microsoft Clarity)</h2>
+      <p>เราใช้ Microsoft Clarity เพื่อทำความเข้าใจว่าผู้เข้าชมอ่านเว็บไซต์อย่างไร Clarity บันทึกข้อมูลการโต้ตอบ ได้แก่ การคลิก การเลื่อนหน้าจอ การเคลื่อนไหวของเมาส์ และการใช้งานโดยทั่วไป แล้วนำเสนอในรูปแบบ heatmap ภาพรวม และการเล่นซ้ำเซสชัน (session replay) ของผู้เข้าชมแต่ละราย ซึ่งช่วยให้เราเห็นว่าส่วนใดของบทความที่ดึงดูดความสนใจ ช่องกรอกข้อมูลและข้อความใด ๆ ที่คุณพิมพ์จะถูกปิดบังไว้ และจะไม่ถูกบันทึก</p>
+      <p>คำว่า “ไม่ระบุตัวตน” หมายความว่าข้อมูลนี้ไม่ได้เชื่อมโยงกับชื่อหรือตัวตนของคุณ Clarity ไม่ได้รับชื่อ อีเมล หรือรายละเอียดบัญชีใด ๆ ของคุณ และข้อความบนหน้าที่คุณเปิดดูจะถูกปิดบังไว้ การเข้าชมแต่ละครั้งจะถูกกำกับด้วยรหัสแบบสุ่ม เพื่อให้สามารถติดตามเซสชันหนึ่ง ๆ ได้ตั้งแต่ต้นจนจบ แต่รหัสดังกล่าวไม่ได้ผูกกับตัวคุณในฐานะบุคคล และไม่ได้ใช้เพื่อจดจำคุณบนเว็บไซต์อื่นหรือในการเข้าชมครั้งถัดไป สิ่งที่บันทึกไว้จำกัดอยู่เพียงลักษณะการใช้งานเว็บไซต์ ร่วมกับรายละเอียดทางเทคนิคทั่วไป เช่น ประเภทอุปกรณ์ เบราว์เซอร์ และภูมิภาคโดยประมาณ (ประเทศหรือเมือง) โดยข้อมูลนี้ได้รับการประมวลผลโดย Microsoft ในนามของเรา</p>
+
+      <h2>คุกกี้</h2>
+      <p>Google Analytics และ Microsoft Clarity ต่างตั้งคุกกี้ของตนเองเพื่อวัดการใช้งานและจดจำเบราว์เซอร์ในการเปิดดูหน้าต่าง ๆ ภายในการเข้าชมครั้งเดียวกัน คุกกี้เหล่านี้ใช้เพื่อการวิเคราะห์เท่านั้น คุณสามารถบล็อกหรือลบคุกกี้ได้จากการตั้งค่าเบราว์เซอร์ของคุณ และเว็บไซต์จะยังคงทำงานได้ตามปกติ</p>
+
+      <h2>คำถามหรือคำขอ</h2>
+      <p>หากคุณมีคำถามเกี่ยวกับหน้านี้ หรือต้องการทราบว่ามีข้อมูลใดบ้างที่เกี่ยวข้องกับคุณ หรือขอให้ลบข้อมูลดังกล่าว โปรดเขียนถึง <a href="mailto:coach@rrealpath.com">coach@rrealpath.com</a></p>
+
+      <p class="article-updated">ปรับปรุงล่าสุด: 10 กันยายน 2569</p>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-mark">rreal<span>path</span></div>
+  <div class="footer-copy">© 2026 rrealpath. All rights reserved.</div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
