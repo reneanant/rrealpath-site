@@ -9,7 +9,7 @@
   --ink-faint: #a0a09a;
   --bg: #ffffff;
   --rule: rgba(26,24,20,0.1);
-  --red: #C8392B;
+  --red: #C8392B;  --blue: #4C5A82;
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Jost', system-ui, sans-serif;
   --font-mono: 'DM Mono', monospace;
@@ -250,7 +250,7 @@ section {
   padding: 7rem 3rem 6rem;
 }
 
-.page-title {
+.page-title {  color: var(--blue);
   font-family: var(--font-serif);
   font-weight: 300;
   font-size: clamp(2.2rem, 4vw, 3.8rem);
@@ -259,7 +259,7 @@ section {
   letter-spacing: -0.01em;
 }
 
-.page-title em { font-style: italic; color: var(--ink-muted); }
+.page-title em { font-style: italic; color: var(--ink-muted); }body .article-title { color: var(--blue); }
 
 .prose {
   font-size: 1.05rem;
