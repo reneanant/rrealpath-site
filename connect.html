@@ -128,6 +128,6 @@
   <div class="footer-copy">&copy; 2026 rrealpath. All rights reserved.</div>
 </footer>
 
-<script src="/js/main.js"></script><script>(function(){if(location.hash!=='#start')return;function j(){var e=document.getElementById('start');if(e)e.scrollIntoView();}window.addEventListener('load',function(){j();setTimeout(j,150);});})();</script>
+<script src="/js/main.js"></script><script>(function(){if(location.hash!=='#start')return;function j(){var e=document.getElementById('start');if(!e)return;var y=e.getBoundingClientRect().top+window.pageYOffset-90;window.scrollTo({top:y,behavior:'instant'});}window.addEventListener('load',function(){j();setTimeout(j,150);setTimeout(j,400);});})();</script>
 </body>
 </html>
