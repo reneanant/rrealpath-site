@@ -122,3 +122,28 @@ if(endMark){ new IntersectionObserver(function(entries){ entries.forEach(functio
 })();
  (function(){var form=document.getElementById('enquiry-form');if(!form)return;var intro=document.getElementById('ef-intro'),confirm=document.getElementById('ef-confirm'),statusEl=document.getElementById('ef-status'),btn=form.querySelector('.form-submit');var langOf=function(){var r=form.querySelector('input[name="language"]:checked');return r?r.value:'';};var started=false;form.addEventListener('focusin',function(){if(started)return;started=true;if(typeof gtag==='function')gtag('event','connect_enquiry_start',{language:langOf()});});form.addEventListener('submit',function(e){e.preventDefault();if(!form.reportValidity())return;var lang=langOf(),label=btn.textContent;btn.disabled=true;btn.textContent=form.dataset.sending||'Sending…';if(statusEl)statusEl.hidden=true;fetch(form.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(form)}).then(function(res){return res.json().catch(function(){return{};}).then(function(data){if(!res.ok||!data.success)throw new Error(data.message||'submit failed');if(typeof gtag==='function')gtag('event','connect_enquiry_submit',{method:'connect_form',language:lang});form.hidden=true;if(intro)intro.hidden=true;if(confirm)confirm.hidden=false;});}).catch(function(){btn.disabled=false;btn.textContent=label;if(statusEl){statusEl.textContent=form.dataset.error||'Something went wrong — please email coach@rrealpath.com.';statusEl.hidden=false;}});});})();
 });
+
+/* Order 18 · Item 10 — coming-next teaser auto-swap.
+   On/after the concrete ICT publish date, and only once the next part is
+   actually live (HEAD check), the teaser becomes the forward "Continue to Part" link.
+   No hand-edit to remember; a slipped publish can never leave a dead link. */
+(function(){
+  var t = document.querySelector('.article-teaser[data-go-date][data-go-url]');
+  if(!t) return;
+  var goDate = t.getAttribute('data-go-date');           // YYYY-MM-DD (ICT)
+  var url    = t.getAttribute('data-go-url');
+  var label  = t.getAttribute('data-go-label') || 'Continue &rarr;';
+  var nowICT = new Date(Date.now() + 7*3600*1000);         // UTC+7
+  var todayICT = nowICT.toISOString().slice(0,10);
+  if(todayICT < goDate) return;                            // not yet publish day
+  fetch(url, { method:'HEAD' }).then(function(res){
+    if(res && res.ok){
+      var p = document.createElement('p');
+      p.className = 'article-crosslink article-next';
+      var a = document.createElement('a');
+      a.href = url; a.innerHTML = label;
+      p.appendChild(a);
+      t.replaceWith(p);
+    }
+  }).catch(function(){});
+})();
