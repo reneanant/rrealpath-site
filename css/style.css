@@ -467,3 +467,130 @@ footer {
 
 .fade-in.visible { opacity: 1; transform: none; } /* ── ENQUIRY FORM (Connect) ── */ .enquiry-form { max-width: 560px; } .form-intro { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 300; font-style: italic; color: var(--ink-mid); line-height: 1.5; max-width: 560px; margin-bottom: 2.5rem; } .enquiry-form .field { margin-bottom: 2rem; } .enquiry-form label, .enquiry-form .field-label { display: block; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-muted); margin-bottom: 0.6rem; } .enquiry-form .opt { color: var(--ink-faint); letter-spacing: 0.08em; } .enquiry-form input[type="text"], .enquiry-form input[type="email"], .enquiry-form textarea { width: 100%; font-family: var(--font-sans); font-size: 1rem; color: var(--ink); background: transparent; border: none; border-bottom: 1px solid var(--rule); padding: 0.5rem 0; line-height: 1.6; transition: border-color 0.2s; } .enquiry-form input:focus, .enquiry-form textarea:focus { outline: none; border-bottom-color: var(--red); } .enquiry-form textarea { resize: vertical; min-height: 120px; } .enquiry-form .field-help { display: block; font-family: var(--font-serif); font-style: italic; font-size: 0.95rem; color: var(--ink-muted); line-height: 1.5; margin-top: 0.6rem; } .enquiry-form .radio-row { display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 0.4rem; } .enquiry-form .radio { display: flex; align-items: center; gap: 0.5rem; font-family: var(--font-sans); font-size: 1rem; letter-spacing: 0; text-transform: none; color: var(--ink); margin-bottom: 0; cursor: pointer; } .enquiry-form .radio input { accent-color: var(--red); } .form-submit { font-family: var(--font-mono); font-size: 0.82rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink); background: transparent; border: none; border-bottom: 1.5px solid var(--red); padding: 0 0 3px; margin-top: 1rem; cursor: pointer; transition: color 0.2s; } .form-submit:hover { color: var(--red); } .form-submit[disabled] { opacity: 0.5; cursor: default; } .form-confirm p { font-family: var(--font-serif); font-size: 1.25rem; font-style: italic; color: var(--ink-mid); line-height: 1.6; max-width: 560px; } .form-confirm a { font-family: var(--font-mono); font-size: 0.9rem; font-style: normal; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--red); } .form-confirm a:hover { color: var(--red); } .form-status { font-family: var(--font-serif); font-size: 1.1rem; font-style: italic; color: var(--ink-mid); line-height: 1.6; margin-top: 2rem; max-width: 560px; } .form-status.error { font-style: normal; color: var(--red); }
  /* ── LANDING CTA BUTTON (design change 8 Sep) ── */ .home-cta { display: inline-flex; align-items: center; gap: 0.5rem; font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink); text-decoration: none; border: 1px solid var(--ink); border-radius: 2px; padding: 0.8rem 1.5rem; margin: 0.6rem 0 1.9rem; transition: background 0.2s, color 0.2s; } .home-cta:hover { background: var(--ink); color: var(--bg); } .home-cta .arr { color: var(--red); } .home-cta:hover .arr { color: var(--bg); } /* ── COACHING "A PLACE TO STAND" BLOCK (design change 8 Sep) ── */ .stand-block { border-left: 2px solid var(--red); padding: 0.3rem 0 0.4rem 2rem; margin: 2.5rem 0 3rem; max-width: 720px; } .stand-block p { font-family: var(--font-serif); font-weight: 300; font-size: clamp(1.4rem, 2.4vw, 1.85rem); line-height: 1.45; color: var(--ink); margin: 0; } .stand-block p + p { margin-top: 1.2rem; } .stand-block .red { color: var(--red); }
+
+/* ══════════════════════════════════════════════════════════════════════
+   ORDER 18 — MOBILE-FIRST LEGIBILITY + CONSISTENCY SWEEP (29 Sep 2026)
+   Higher-specificity overrides so a single edit governs every article page
+   (article component CSS is duplicated inline per page; body-scoped rules win).
+   ══════════════════════════════════════════════════════════════════════ */
+
+/* Item 1 — article header: date + No.·Part eyebrow bigger; dek more prominent */
+body .article-meta-number,
+body .article-meta-date { font-size: 0.8rem; }
+body .article-intro {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--ink-mid);
+  max-width: 640px;
+}
+
+/* Item 3 — "← THINKING" back-nav: bigger, clearly tappable */
+body .article-back {
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+  gap: 0.6rem;
+}
+
+/* Item 5 — section titles (h2) Steel Blue everywhere (old pages were ink) */
+body .article-body h2 { color: var(--blue); }
+/* (main article titles already blue via `body .article-title` above) */
+
+/* Item 4 — numbered lists = house format (red mono numeral + hanging indent),
+   consistent wherever <ol> occurs. article-08-part-1 has no <ol> → unaffected. */
+body .article-body ol { list-style: none; counter-reset: item; margin: 0 0 1.4rem 0; }
+body .article-body ol li {
+  counter-increment: item;
+  font-size: 1rem; color: var(--ink-mid); line-height: 1.9;
+  margin-bottom: 1rem; padding-left: 1.9rem; position: relative;
+}
+body .article-body ol li::before {
+  content: counter(item) '.';
+  position: absolute; left: 0; top: 0.05rem;
+  color: var(--red); font-family: var(--font-mono); font-size: 0.9rem;
+}
+
+/* Item 2 — emphasis / philosophy / invitation italic lines → Steel Blue */
+body .article-cta p,
+body .contact-intro,
+body .form-intro,
+body .contact-signal p,
+body .home-invite { color: var(--blue); }
+
+/* Item 6 — end-of-part forward link: same size as the top cross-link + standout */
+body .article-crosslink { font-size: 0.8rem; }
+body .article-crosslink.article-next { margin-top: 2.6rem; }
+body .article-crosslink.article-next a {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  font-size: 0.9rem; letter-spacing: 0.1em;
+  color: var(--blue); border: 1px solid var(--blue); border-radius: 2px;
+  padding: 0.7rem 1.35rem; transition: background 0.2s, color 0.2s;
+}
+body .article-crosslink.article-next a:hover { background: var(--blue); color: #fff; }
+
+/* Item 7 — Connect submit = a real "SEND" button */
+body .form-submit {
+  font-family: var(--font-mono); font-size: 0.85rem; letter-spacing: 0.15em;
+  text-transform: uppercase; color: #fff; background: var(--blue);
+  border: none; border-radius: 2px; padding: 0.9rem 2.6rem;
+  margin-top: 1.2rem; cursor: pointer; transition: background 0.2s;
+}
+body .form-submit:hover { background: var(--ink); color: #fff; }
+body .form-submit[disabled] { opacity: 0.5; cursor: default; }
+
+/* Item 8 — Connect form: boxed fields (Direction B) */
+body .enquiry-form .field { margin-bottom: 1.7rem; }
+body .enquiry-form input[type="text"],
+body .enquiry-form input[type="email"],
+body .enquiry-form textarea {
+  border: 1px solid var(--rule);
+  background: #fafafa;
+  border-radius: 3px;
+  padding: 0.8rem 0.95rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+body .enquiry-form input[type="text"]:focus,
+body .enquiry-form input[type="email"]:focus,
+body .enquiry-form textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  border-bottom-color: var(--blue);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(76,90,130,0.12);
+}
+
+/* Item 9 — share bar: bigger, platform-colour-coded, with a share invitation */
+body .article-share { gap: 0.9rem 1.4rem; }
+body .article-share-invite {
+  display: block; width: 100%;
+  font-family: var(--font-serif); font-style: italic; font-size: 1.08rem;
+  color: var(--blue); margin-bottom: 0.1rem;
+}
+body .article-share-label { font-size: 0.78rem; }
+body .article-share-links { gap: 0.7rem; flex-wrap: wrap; }
+body .article-share-links a,
+body .article-share-copy {
+  font-size: 0.78rem; padding: 0.55rem 1.05rem;
+  border: 1px solid var(--rule); border-radius: 3px;
+  color: var(--ink-mid); transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+body .article-share-links a[href*="linkedin"] { color: #0A66C2; border-color: #0A66C2; }
+body .article-share-links a[href*="linkedin"]:hover { background: #0A66C2; color: #fff; }
+body .article-share-links a[href*="x.com"],
+body .article-share-links a[href*="twitter"] { color: #14171A; border-color: #14171A; }
+body .article-share-links a[href*="x.com"]:hover,
+body .article-share-links a[href*="twitter"]:hover { background: #14171A; color: #fff; }
+body .article-share-copy { color: var(--ink-muted); border-color: var(--rule); }
+body .article-share-copy:hover { background: var(--ink); color: #fff; }
+body .article-share-sep { display: none; }
+
+/* Item 10 — coming-next teaser: styled; JS swaps to the forward link at publish (see main.js) */
+body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
+
+/* Mobile tightening for the above */
+@media (max-width: 768px) {
+  body .article-intro { font-size: 1.25rem; }
+  body .article-share-links a,
+  body .article-share-copy { font-size: 0.82rem; padding: 0.6rem 1.1rem; }
+  body .form-submit { width: 100%; text-align: center; }
+}
