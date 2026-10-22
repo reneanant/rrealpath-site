@@ -4,7 +4,15 @@
 
   <url>
     <loc>https://rrealpath.com/</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/</loc>
+    <lastmod>2026-10-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/" />
     <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/" />
@@ -12,7 +20,15 @@
 
   <url>
     <loc>https://rrealpath.com/coaching</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/coaching" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/coaching" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/coaching" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/coaching</loc>
+    <lastmod>2026-10-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/coaching" />
     <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/coaching" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/coaching" />
@@ -20,7 +36,15 @@
 
   <url>
     <loc>https://rrealpath.com/resume</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/resume" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/resume" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/resume" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/resume</loc>
+    <lastmod>2026-10-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/resume" />
     <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/resume" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/resume" />
@@ -28,7 +52,15 @@
 
   <url>
     <loc>https://rrealpath.com/connect</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-10-22</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/connect" />
+    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/connect" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/connect" />
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/th/connect</loc>
+    <lastmod>2026-10-22</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/connect" />
     <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/connect" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/connect" />
@@ -36,39 +68,67 @@
 
   <url>
     <loc>https://rrealpath.com/thinking</loc>
-    <lastmod>2026-08-10</lastmod>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
   <url>
-    <loc>https://rrealpath.com/th/</loc>
-    <lastmod>2026-08-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/" />
+    <loc>https://rrealpath.com/article-01</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
   <url>
-    <loc>https://rrealpath.com/th/coaching</loc>
-    <lastmod>2026-08-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/coaching" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/coaching" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/coaching" />
+    <loc>https://rrealpath.com/article-02</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
   <url>
-    <loc>https://rrealpath.com/th/resume</loc>
-    <lastmod>2026-08-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/resume" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/resume" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/resume" />
+    <loc>https://rrealpath.com/article-03</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
   <url>
-    <loc>https://rrealpath.com/th/connect</loc>
-    <lastmod>2026-08-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="en" href="https://rrealpath.com/connect" />
-    <xhtml:link rel="alternate" hreflang="th" href="https://rrealpath.com/th/connect" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://rrealpath.com/connect" />
+    <loc>https://rrealpath.com/article-04</loc>
+    <lastmod>2026-10-22</lastmod>
   </url>
 
-  <url><loc>https://rrealpath.com/article-07-part-3.html</loc><lastmod>2026-09-22</lastmod></url><url><loc>https://rrealpath.com/article-08-part-1.html</loc><lastmod>2026-09-28</lastmod></url><url><loc>https://rrealpath.com/article-08-part-2.html</loc><lastmod>2026-10-06</lastmod></url><url><loc>https://rrealpath.com/article-08-part-3.html</loc><lastmod>2026-10-13</lastmod></url></urlset>
+  <url>
+    <loc>https://rrealpath.com/article-05</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-06</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-07-part-1</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-07-part-2</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-07-part-3</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-08-part-1</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-08-part-2</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://rrealpath.com/article-08-part-3</loc>
+    <lastmod>2026-10-22</lastmod>
+  </url>
+
+</urlset>

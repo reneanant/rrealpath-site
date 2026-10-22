@@ -32,24 +32,38 @@
   {"@context":"https://schema.org","@type":"ProfessionalService","@id":"https://rrealpath.com/#organization","name":"rrealpath","url":"https://rrealpath.com/","image":"https://rrealpath.com/og-image.png","description":"Executive and entrepreneur coaching for a wide range of business challenges in Southeast Asia's cross-cultural work environments.","email":"coach@rrealpath.com","areaServed":["Thailand","Southeast Asia"],"availableLanguage":["English","Thai","German"],"address":{"@type":"PostalAddress","addressLocality":"Chiang Mai","addressCountry":"TH"},"founder":{"@type":"Person","@id":"https://rrealpath.com/#rene","name":"René Anant Feddersen"},"sameAs":["https://www.linkedin.com/in/ren%C3%A9-anant-feddersen-a7b173/","https://medium.com/@reneanantfeddersen"]}
   </script>
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
   <script>
+    /* GA4 — production host only; ?internal=1 marks this device as own traffic (?internal=0 clears) */
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RN326XK8ME');
+    (function(){
+      var h = location.hostname;
+      if (h !== 'rrealpath.com' && h !== 'www.rrealpath.com') return;
+      var internal = false;
+      try {
+        var q = new URLSearchParams(location.search).get('internal');
+        if (q === '1') { localStorage.setItem('rr_internal', '1'); document.cookie = 'rr_internal=1; max-age=63072000; path=/; SameSite=Lax'; }
+        if (q === '0') { localStorage.removeItem('rr_internal'); document.cookie = 'rr_internal=; max-age=0; path=/; SameSite=Lax'; }
+        internal = localStorage.getItem('rr_internal') === '1' || /(?:^|; )rr_internal=1/.test(document.cookie);
+      } catch (e) { internal = /(?:^|; )rr_internal=1/.test(document.cookie); }
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-RN326XK8ME', internal ? { traffic_type: 'internal' } : {});
+    })();
   </script>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">rreal<span>path</span></a>
+  <a href="/th/" class="nav-logo">rreal<span>path</span></a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="/thinking.html">Thinking</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
-      <li><a href="connect.html">Connect</a></li>
+      <li><a href="/thinking">Thinking</a></li>
+      <li><a href="/th/resume">Resume</a></li>
+      <li><a href="/th/coaching">Coaching</a></li>
+      <li><a href="/th/connect">Connect</a></li>
     </ul>
     <span class="nav-divider"></span>
     <span class="nav-lang"><a href="/">EN</a><span class="sep">/</span><span class="current">TH</span></span>
@@ -60,14 +74,14 @@
 </nav>
 
 <div class="nav-drawer" id="nav-drawer">
-  <a href="/thinking.html">Thinking</a>
-  <a href="resume.html">Resume</a>
-  <a href="coaching.html">Coaching</a>
-  <a href="connect.html">Connect</a>
+  <a href="/thinking">Thinking</a>
+  <a href="/th/resume">Resume</a>
+  <a href="/th/coaching">Coaching</a>
+  <a href="/th/connect">Connect</a>
   <a href="/">EN</a>
 </div>
 
-<main class="page"><div class="page-inner page-inner--home"><figure class="lead-figure"><img src="/images/landing-chairs-16x9.jpg" width="1600" height="899" alt="เก้าอี้หนังสีดำสองตัวหันหน้าเข้าหากันคนละฝั่งของโต๊ะเตี้ยในล็อบบี้ที่สว่างและเรียบง่าย" /></figure><div class="home-lead"><h1>ผมชื่อ เรอเน อนันต์ เฟดเดอร์เซน ผมเป็นโค้ชให้กับผู้นำในสภาพแวดล้อมทางธุรกิจของเอเชียตะวันออกเฉียงใต้ที่กำลังเปลี่ยนแปลงอย่างรวดเร็ว ลูกค้าของผมคือผู้บริหารระดับสูงและผู้ประกอบการ</h1><p>นอกจากนี้ ผมยังให้บริการการอบรมการจัดกระบวนการ โดยเน้นทีมงานข้ามวัฒนธรรม</p><a href="/th/connect" class="home-cta">เริ่มต้นการสนทนา <span class="arr" aria-hidden="true">&rarr;</span></a><p>rrealpath คือแหล่งข้อมูล ที่พิจารณาว่าผู้นำตัดสินใจอย่างไร<br>เชิญอ่านบทความ งานวิจัย และเรื่องเล่าของผมได้<a href="/thinking.html">ที่นี่</a> (ภาษาอังกฤษ)</p></div></div></main>
+<main class="page"><div class="page-inner page-inner--home"><figure class="lead-figure"><img src="/images/landing-chairs-16x9.jpg" width="1600" height="899" alt="เก้าอี้หนังสีดำสองตัวหันหน้าเข้าหากันคนละฝั่งของโต๊ะเตี้ยในล็อบบี้ที่สว่างและเรียบง่าย" /></figure><div class="home-lead"><h1>ผมชื่อ เรอเน อนันต์ เฟดเดอร์เซน ผมเป็นโค้ชให้กับผู้นำในสภาพแวดล้อมทางธุรกิจของเอเชียตะวันออกเฉียงใต้ที่กำลังเปลี่ยนแปลงอย่างรวดเร็ว ลูกค้าของผมคือผู้บริหารระดับสูงและผู้ประกอบการ</h1><p>นอกจากนี้ ผมยังให้บริการการอบรมการจัดกระบวนการ โดยเน้นทีมงานข้ามวัฒนธรรม</p><a href="/th/connect" class="home-cta">เริ่มต้นการสนทนา <span class="arr" aria-hidden="true">&rarr;</span></a><p>rrealpath คือแหล่งข้อมูล ที่พิจารณาว่าผู้นำตัดสินใจอย่างไร<br>เชิญอ่านบทความ งานวิจัย และเรื่องเล่าของผมได้<a href="/thinking">ที่นี่</a> (ภาษาอังกฤษ)</p></div></div></main>
 
 <footer>
   <div class="footer-mark">rreal<span>path</span></div>

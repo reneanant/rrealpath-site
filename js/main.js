@@ -1,16 +1,30 @@
 /* Microsoft Clarity — project "rrealpath" (yfy23kxdlv). Masking: Balanced (form fields & user-typed text masked). */
+/* Loads on the production host only; skipped on devices marked as own traffic (?internal=1). */
+(function(){
+var h = location.hostname;
+if (h !== 'rrealpath.com' && h !== 'www.rrealpath.com') return;
+var internal = false;
+try {
+var q = new URLSearchParams(location.search).get('internal');
+if (q === '1') localStorage.setItem('rr_internal', '1');
+if (q === '0') localStorage.removeItem('rr_internal');
+internal = localStorage.getItem('rr_internal') === '1' || /(?:^|; )rr_internal=1/.test(document.cookie);
+} catch (e) { internal = /(?:^|; )rr_internal=1/.test(document.cookie); }
+if (internal) return;
 (function(c,l,a,r,i,t,y){
 c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 })(window, document, "clarity", "script", "yfy23kxdlv");
+})();
 
 document.addEventListener('DOMContentLoaded', () => {
 
 // ── Active nav link
-const path = window.location.pathname.split('/').pop() || 'index.html';
+const norm = p => p.replace(/\.html$/, '').replace(/\/index$/, '/').replace(/(.)\/$/, '$1');
+const here = norm(window.location.pathname);
 document.querySelectorAll('.nav-links a, .nav-drawer a').forEach(a => {
-if (a.getAttribute('href') === path) a.classList.add('active');
+if (a.pathname && norm(a.pathname) === here) a.classList.add('active');
 });
 
 // ── Mobile nav toggle
