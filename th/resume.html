@@ -32,27 +32,41 @@
   {"@context":"https://schema.org","@type":"Person","@id":"https://rrealpath.com/#rene","name":"René Anant Feddersen","alternateName":"เรอเน อนันต์ เฟดเดอร์เซน","jobTitle":"Executive and Entrepreneur Coach","url":"https://rrealpath.com/resume","image":"https://rrealpath.com/og-image.png","email":"coach@rrealpath.com","knowsLanguage":["English","Thai","German"],"address":{"@type":"PostalAddress","addressLocality":"Chiang Mai","addressCountry":"TH"},"worksFor":{"@type":"ProfessionalService","@id":"https://rrealpath.com/#organization","name":"rrealpath"},"sameAs":["https://www.linkedin.com/in/ren%C3%A9-anant-feddersen-a7b173/","https://medium.com/@reneanantfeddersen"]}
   </script>
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
   <script>
+    /* GA4 — production host only; ?internal=1 marks this device as own traffic (?internal=0 clears) */
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RN326XK8ME');
+    (function(){
+      var h = location.hostname;
+      if (h !== 'rrealpath.com' && h !== 'www.rrealpath.com') return;
+      var internal = false;
+      try {
+        var q = new URLSearchParams(location.search).get('internal');
+        if (q === '1') { localStorage.setItem('rr_internal', '1'); document.cookie = 'rr_internal=1; max-age=63072000; path=/; SameSite=Lax'; }
+        if (q === '0') { localStorage.removeItem('rr_internal'); document.cookie = 'rr_internal=; max-age=0; path=/; SameSite=Lax'; }
+        internal = localStorage.getItem('rr_internal') === '1' || /(?:^|; )rr_internal=1/.test(document.cookie);
+      } catch (e) { internal = /(?:^|; )rr_internal=1/.test(document.cookie); }
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-RN326XK8ME', internal ? { traffic_type: 'internal' } : {});
+    })();
   </script>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">rreal<span>path</span></a>
+  <a href="/th/" class="nav-logo">rreal<span>path</span></a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="/thinking.html">Thinking</a></li>
-      <li><a href="resume.html" class="active">Resume</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
-      <li><a href="connect.html">Connect</a></li>
+      <li><a href="/thinking">Thinking</a></li>
+      <li><a href="/th/resume" class="active">Resume</a></li>
+      <li><a href="/th/coaching">Coaching</a></li>
+      <li><a href="/th/connect">Connect</a></li>
     </ul>
     <span class="nav-divider"></span>
-    <span class="nav-lang"><a href="/resume.html">EN</a><span class="sep">/</span><span class="current">TH</span></span>
+    <span class="nav-lang"><a href="/resume">EN</a><span class="sep">/</span><span class="current">TH</span></span>
   </div>
   <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -60,14 +74,14 @@
 </nav>
 
 <div class="nav-drawer" id="nav-drawer">
-  <a href="/thinking.html">Thinking</a>
-  <a href="resume.html">Resume</a>
-  <a href="coaching.html">Coaching</a>
-  <a href="connect.html">Connect</a>
-  <a href="/resume.html">EN</a>
+  <a href="/thinking">Thinking</a>
+  <a href="/th/resume">Resume</a>
+  <a href="/th/coaching">Coaching</a>
+  <a href="/th/connect">Connect</a>
+  <a href="/resume">EN</a>
 </div>
 
-<main class="page"><div class="page-inner-wide"><div class="hero-stand"><div class="hero-portrait"><img src="/images/rene-portrait-bw.jpg" width="600" height="750" alt="เรอเน อนันต์ เฟดเดอร์เซน" /></div><div class="credo-hero"><div class="credo-eyebrow">จุดยืน<span class="alt-en">A place to stand</span></div><p>ส่วนที่ยากที่สุดของการโค้ชผู้นำ คือการหาจุดยืน ปัญหาของการเป็นโค้ชคือเรามักอยากแก้ปัญหา อยากจัดการให้ทุกอย่างเรียบร้อย แต่ความจริงแล้ว ลูกค้านำทางออกของตนเองติดตัวมาด้วยเสมอ</p><p><span class="lift">งานของผมไม่ใช่การให้คำตอบ แต่คือการรับฟังและการตั้งคำถามที่ถูกต้อง</span> ผมประคองจุดยืนให้มั่นคง เพื่อให้สิ่งที่ลูกค้ารู้อยู่แล้วปรากฏชัดขึ้น</p><p><span class="lift">เมื่อลูกค้าประสบความสำเร็จ ศักยภาพนั้นเป็นของเขาเองเสมอ</span> และสิ่งที่เขาไปถึงได้นั้น เป็นสิ่งที่เขามีศักยภาพจะไปถึงมาตั้งแต่ต้น</p></div></div><div class="resume-resolve"></div><div class="section-label">Resume · ประวัติ</div><h1 class="page-title" style="margin-bottom: 1.2rem;"><span class="bi-primary">เรอเน อนันต์ เฟดเดอร์เซน</span><span class="bi-alt en">René Anant Feddersen</span></h1><div class="prose" style="max-width: 680px; margin-bottom: 1rem;"><p>โค้ชผู้บริหารและผู้ประกอบการ ผู้ให้การอบรมการจัดกระบวนการ ประจำอยู่ที่เชียงใหม่ ทำงานทั่วประเทศไทยและเอเชียตะวันออกเฉียงใต้ ด้วยภาษาอังกฤษ ไทย และเยอรมัน.</p></div><!-- EXPERIENCE --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">ประสบการณ์</span><span class="bi-alt en">Experience</span></div><div class="prose"><p>เรอเนต์เป็นผู้ประกอบการ โค้ชด้านภาวะผู้นำ และผู้นำกระบวนการเพื่อการเปลี่ยนแปลง ผู้มีความคล่องแคล่วในหลากวัฒนธรรมทั้งในบริบทธุรกิจแบบตะวันตกและเอเชีย. เขาเกิดในประเทศไทย เคยอาศัยและทำงานในยุโรปและสหรัฐอเมริกา และใช้ชีวิต 40 ปีในเอเชียตะวันออกเฉียงใต้ (ส่วนใหญ่ในประเทศไทย). เขามีความเฉียบคมทางความคิดและพลังในการสร้างการมีส่วนร่วมที่เปิดโลกทัศน์และเปลี่ยนมุมมอง โดยมุ่งเน้นอย่างต่อเนื่องในการตั้งเป้าหมายใหญ่และบรรลุเป้าหมายเหล่านั้น.</p></div></div></div><!-- How the coaching works --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">การโค้ชนี้ทำงานอย่างไร</span><span class="bi-alt en">How the coaching works</span></div><div class="prose"><p>การโค้ชนี้เน้นประสบการณ์การทำงานจริงมากกว่าทฤษฎี. ออกแบบมาสำหรับผู้นำที่ทำงานในสภาพแวดล้อมข้ามวัฒนธรรมในเอเชียตะวันออกเฉียงใต้ ซึ่งการตัดสินใจ ความสัมพันธ์ หรือการส่งมอบงานด้านการเป็นผู้นำ ต้องสามารถดำเนินต่อไปได้อย่างราบรื่นในสองภาษาและสองวิธีการดำเนินธุรกิจพร้อมกัน.</p><p>ความคล่องระดับเจ้าของภาษาในภาษาอังกฤษ ไทย และเยอรมัน หมายความว่าทั้งสองฝ่ายจะเข้าใจกันในภาษาที่แต่ละฝ่ายใช้คิด และในภูมิหลังทางวัฒนธรรมที่แต่ละฝ่ายมา. สำหรับองค์กรที่ส่งโค้ชไปทำงานกับผู้นำ นี่คือความแตกต่างที่แท้จริง กล่าวคือ การโค้ชที่เป็นเจ้าของวัฒนธรรมของทั้งสองฝ่าย.</p></div></div></div><!-- CREDENTIALS AND APPROACH --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">คุณสมบัติและแนวทางการทำงาน</span><span class="bi-alt en">Credentials and approach</span></div><div class="prose"><p>ประสบการณ์ทางธุรกิจ 30 ปี ครอบคลุมทั้งสตาร์ทอัพ วิสาหกิจขนาดกลางและขนาดย่อม (SME) และบริษัทข้ามชาติ. มีประสบการณ์ 10 ปี ด้านการฝึกอบรมและการโค้ช.</p></div></div></div><!-- CONFIDENCE --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">การรักษาความลับ</span><span class="bi-alt en">Confidence</span></div><div class="prose"><p>ทุกการทำงานร่วมกันเป็นความลับ. สิ่งที่พูดคุยกันระหว่างผู้นำกับโค้ชจะอยู่เพียงที่นั่นเท่านั้น.</p></div></div></div><!-- CLOSING --><div style="border-top: 1px solid var(--rule); padding: 5rem 0 0;" class="fade-in"><a href="connect.html" class="cta-link">ติดต่อเรา</a></div></div></main>
+<main class="page"><div class="page-inner-wide"><div class="hero-stand"><div class="hero-portrait"><img src="/images/rene-portrait-bw.jpg" width="600" height="750" alt="เรอเน อนันต์ เฟดเดอร์เซน" /></div><div class="credo-hero"><div class="credo-eyebrow">จุดยืน<span class="alt-en">A place to stand</span></div><p>ส่วนที่ยากที่สุดของการโค้ชผู้นำ คือการหาจุดยืน ปัญหาของการเป็นโค้ชคือเรามักอยากแก้ปัญหา อยากจัดการให้ทุกอย่างเรียบร้อย แต่ความจริงแล้ว ลูกค้านำทางออกของตนเองติดตัวมาด้วยเสมอ</p><p><span class="lift">งานของผมไม่ใช่การให้คำตอบ แต่คือการรับฟังและการตั้งคำถามที่ถูกต้อง</span> ผมประคองจุดยืนให้มั่นคง เพื่อให้สิ่งที่ลูกค้ารู้อยู่แล้วปรากฏชัดขึ้น</p><p><span class="lift">เมื่อลูกค้าประสบความสำเร็จ ศักยภาพนั้นเป็นของเขาเองเสมอ</span> และสิ่งที่เขาไปถึงได้นั้น เป็นสิ่งที่เขามีศักยภาพจะไปถึงมาตั้งแต่ต้น</p></div></div><div class="resume-resolve"></div><div class="section-label">Resume · ประวัติ</div><h1 class="page-title" style="margin-bottom: 1.2rem;"><span class="bi-primary">เรอเน อนันต์ เฟดเดอร์เซน</span><span class="bi-alt en">René Anant Feddersen</span></h1><div class="prose" style="max-width: 680px; margin-bottom: 1rem;"><p>โค้ชผู้บริหารและผู้ประกอบการ ผู้ให้การอบรมการจัดกระบวนการ ประจำอยู่ที่เชียงใหม่ ทำงานทั่วประเทศไทยและเอเชียตะวันออกเฉียงใต้ ด้วยภาษาอังกฤษ ไทย และเยอรมัน.</p></div><!-- EXPERIENCE --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">ประสบการณ์</span><span class="bi-alt en">Experience</span></div><div class="prose"><p>เรอเนต์เป็นผู้ประกอบการ โค้ชด้านภาวะผู้นำ และผู้นำกระบวนการเพื่อการเปลี่ยนแปลง ผู้มีความคล่องแคล่วในหลากวัฒนธรรมทั้งในบริบทธุรกิจแบบตะวันตกและเอเชีย. เขาเกิดในประเทศไทย เคยอาศัยและทำงานในยุโรปและสหรัฐอเมริกา และใช้ชีวิต 40 ปีในเอเชียตะวันออกเฉียงใต้ (ส่วนใหญ่ในประเทศไทย). เขามีความเฉียบคมทางความคิดและพลังในการสร้างการมีส่วนร่วมที่เปิดโลกทัศน์และเปลี่ยนมุมมอง โดยมุ่งเน้นอย่างต่อเนื่องในการตั้งเป้าหมายใหญ่และบรรลุเป้าหมายเหล่านั้น.</p></div></div></div><!-- How the coaching works --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">การโค้ชนี้ทำงานอย่างไร</span><span class="bi-alt en">How the coaching works</span></div><div class="prose"><p>การโค้ชนี้เน้นประสบการณ์การทำงานจริงมากกว่าทฤษฎี. ออกแบบมาสำหรับผู้นำที่ทำงานในสภาพแวดล้อมข้ามวัฒนธรรมในเอเชียตะวันออกเฉียงใต้ ซึ่งการตัดสินใจ ความสัมพันธ์ หรือการส่งมอบงานด้านการเป็นผู้นำ ต้องสามารถดำเนินต่อไปได้อย่างราบรื่นในสองภาษาและสองวิธีการดำเนินธุรกิจพร้อมกัน.</p><p>ความคล่องระดับเจ้าของภาษาในภาษาอังกฤษ ไทย และเยอรมัน หมายความว่าทั้งสองฝ่ายจะเข้าใจกันในภาษาที่แต่ละฝ่ายใช้คิด และในภูมิหลังทางวัฒนธรรมที่แต่ละฝ่ายมา. สำหรับองค์กรที่ส่งโค้ชไปทำงานกับผู้นำ นี่คือความแตกต่างที่แท้จริง กล่าวคือ การโค้ชที่เป็นเจ้าของวัฒนธรรมของทั้งสองฝ่าย.</p></div></div></div><!-- CREDENTIALS AND APPROACH --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">คุณสมบัติและแนวทางการทำงาน</span><span class="bi-alt en">Credentials and approach</span></div><div class="prose"><p>ประสบการณ์ทางธุรกิจ 30 ปี ครอบคลุมทั้งสตาร์ทอัพ วิสาหกิจขนาดกลางและขนาดย่อม (SME) และบริษัทข้ามชาติ. มีประสบการณ์ 10 ปี ด้านการฝึกอบรมและการโค้ช.</p></div></div></div><!-- CONFIDENCE --><div style="border-top: 1px solid var(--rule); padding: 5rem 0;" class="fade-in"><div class="two-col"><div class="col-heading"><span class="bi-primary">การรักษาความลับ</span><span class="bi-alt en">Confidence</span></div><div class="prose"><p>ทุกการทำงานร่วมกันเป็นความลับ. สิ่งที่พูดคุยกันระหว่างผู้นำกับโค้ชจะอยู่เพียงที่นั่นเท่านั้น.</p></div></div></div><!-- CLOSING --><div style="border-top: 1px solid var(--rule); padding: 5rem 0 0;" class="fade-in"><a href="/th/connect" class="cta-link">ติดต่อเรา</a></div></div></main>
 
 <footer>
   <div class="footer-mark">rreal<span>path</span></div>

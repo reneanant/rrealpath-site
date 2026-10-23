@@ -11,21 +11,35 @@
   <meta property="og:site_name" content="rrealpath" />
   <meta property="og:title" content="The Cross-Cultural Laboratory, Part III" />
   <meta property="og:description" content="Shifting landscapes, where Thailand stands out, global trends, and cultural exclusivity — how curiosity and respect build cross-cultural bridges. Part III of a three-part series." />
-  <meta property="og:url" content="https://rrealpath.com/article-07-part-3.html" />
+  <meta property="og:url" content="https://rrealpath.com/article-07-part-3" />
   <meta property="og:image" content="https://rrealpath.com/images/article-07-part3-og.png" /><meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://rrealpath.com/images/article-07-part3-og.png" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://rrealpath.com/article-07-part-3.html" />
+  <link rel="canonical" href="https://rrealpath.com/article-07-part-3" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32" />
   <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
   <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
   <script>
+    /* GA4 — production host only; ?internal=1 marks this device as own traffic (?internal=0 clears) */
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RN326XK8ME');
+    (function(){
+      var h = location.hostname;
+      if (h !== 'rrealpath.com' && h !== 'www.rrealpath.com') return;
+      var internal = false;
+      try {
+        var q = new URLSearchParams(location.search).get('internal');
+        if (q === '1') { localStorage.setItem('rr_internal', '1'); document.cookie = 'rr_internal=1; max-age=63072000; path=/; SameSite=Lax'; }
+        if (q === '0') { localStorage.removeItem('rr_internal'); document.cookie = 'rr_internal=; max-age=0; path=/; SameSite=Lax'; }
+        internal = localStorage.getItem('rr_internal') === '1' || /(?:^|; )rr_internal=1/.test(document.cookie);
+      } catch (e) { internal = /(?:^|; )rr_internal=1/.test(document.cookie); }
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-RN326XK8ME', internal ? { traffic_type: 'internal' } : {});
+    })();
   </script>
   <style>
     .article-wrap { max-width: var(--max-wide); padding: 5rem 3rem 6rem; }
@@ -73,12 +87,12 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">rreal<span>path</span></a>
+  <a href="/" class="nav-logo">rreal<span>path</span></a>
   <ul class="nav-links">
-    <li><a href="thinking.html">Thinking</a></li>
-    <li><a href="resume.html">Resume</a></li>
-    <li><a href="coaching.html">Coaching</a></li>
-    <li><a href="connect.html">Connect</a></li>
+    <li><a href="/thinking">Thinking</a></li>
+    <li><a href="/resume">Resume</a></li>
+    <li><a href="/coaching">Coaching</a></li>
+    <li><a href="/connect">Connect</a></li>
   </ul>
   <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -86,16 +100,16 @@
 </nav>
 
 <div class="nav-drawer" id="nav-drawer">
-  <a href="thinking.html">Thinking</a>
-  <a href="resume.html">Resume</a>
-  <a href="coaching.html">Coaching</a>
-  <a href="connect.html">Connect</a>
+  <a href="/thinking">Thinking</a>
+  <a href="/resume">Resume</a>
+  <a href="/coaching">Coaching</a>
+  <a href="/connect">Connect</a>
 </div>
 
 <main class="page">
   <div class="article-wrap">
 
-    <a href="thinking.html" class="article-back">&larr; Thinking</a>
+    <a href="/thinking" class="article-back">&larr; Thinking</a>
 
     <div class="article-meta">
       <span class="article-meta-number">No. 07 &middot; Part III</span>
@@ -109,7 +123,7 @@
     <div class="article-body">
       <h2>Foreword to Part III</h2>
       <p>This article draws on cross-cultural experiences from my own life. It is written in 3 parts, of which this is the 3rd part.</p>
-      <p class="article-crosslink"><a href="article-07-part-1.html">&larr; Read Part I</a> &nbsp;&middot;&nbsp; <a href="article-07-part-2.html">&larr; Read Part II</a></p>
+      <p class="article-crosslink"><a href="/article-07-part-1">&larr; Read Part I</a> &nbsp;&middot;&nbsp; <a href="/article-07-part-2">&larr; Read Part II</a></p>
       <hr class="article-rule">
       <h2>#7 Shifting Landscapes</h2>
       <figure class="article-figure"><img src="images/article-07-part3-01.jpg" alt="Bangkok skyline at dusk, present day" loading="lazy" /><figcaption class="article-lead-caption"><div class="article-lead-bar"></div><span class="article-lead-name">Bangkok Skyline at dusk, present day.</span><span class="article-lead-credit">Wilfried Strang</span></figcaption></figure>
@@ -142,9 +156,9 @@
       <span class="article-share-invite">Please share the knowledge.</span>
       <span class="article-share-label">Share</span>
       <div class="article-share-links">
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frrealpath.com%2Farticle-07-part-3.html" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Frrealpath.com%2Farticle-07-part-3" target="_blank" rel="noopener">LinkedIn</a>
         <span class="article-share-sep">&middot;</span>
-        <a href="https://x.com/intent/tweet?url=https%3A%2F%2Frrealpath.com%2Farticle-07-part-3.html&amp;text=The%20Cross-Cultural%20Laboratory%2C%20Part%20III" target="_blank" rel="noopener">X</a>
+        <a href="https://x.com/intent/tweet?url=https%3A%2F%2Frrealpath.com%2Farticle-07-part-3&amp;text=The%20Cross-Cultural%20Laboratory%2C%20Part%20III" target="_blank" rel="noopener">X</a>
         <span class="article-share-sep">&middot;</span>
         <button class="article-share-copy" onclick="copyLink(this)">Copy link</button>
       </div>

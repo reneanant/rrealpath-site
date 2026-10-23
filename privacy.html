@@ -17,12 +17,26 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/bilingual.css">
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME"></script>
   <script>
+    /* GA4 — production host only; ?internal=1 marks this device as own traffic (?internal=0 clears) */
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-RN326XK8ME');
+    (function(){
+      var h = location.hostname;
+      if (h !== 'rrealpath.com' && h !== 'www.rrealpath.com') return;
+      var internal = false;
+      try {
+        var q = new URLSearchParams(location.search).get('internal');
+        if (q === '1') { localStorage.setItem('rr_internal', '1'); document.cookie = 'rr_internal=1; max-age=63072000; path=/; SameSite=Lax'; }
+        if (q === '0') { localStorage.removeItem('rr_internal'); document.cookie = 'rr_internal=; max-age=0; path=/; SameSite=Lax'; }
+        internal = localStorage.getItem('rr_internal') === '1' || /(?:^|; )rr_internal=1/.test(document.cookie);
+      } catch (e) { internal = /(?:^|; )rr_internal=1/.test(document.cookie); }
+      var s = document.createElement('script'); s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RN326XK8ME';
+      document.head.appendChild(s);
+      gtag('js', new Date());
+      gtag('config', 'G-RN326XK8ME', internal ? { traffic_type: 'internal' } : {});
+    })();
   </script>
   <style>
     .article-wrap {
@@ -105,13 +119,13 @@
 </head>
 <body>
 <nav>
-  <a href="index.html" class="nav-logo">rreal<span>path</span></a>
+  <a href="/" class="nav-logo">rreal<span>path</span></a>
   <div class="nav-right">
     <ul class="nav-links">
-      <li><a href="thinking.html">Thinking</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
-      <li><a href="connect.html">Connect</a></li>
+      <li><a href="/thinking">Thinking</a></li>
+      <li><a href="/resume">Resume</a></li>
+      <li><a href="/coaching">Coaching</a></li>
+      <li><a href="/connect">Connect</a></li>
     </ul>
     <span class="nav-divider"></span>
     <span class="nav-lang"><span class="current">EN</span><span class="sep">/</span><a href="/th/privacy">TH</a></span>
@@ -121,16 +135,16 @@
   </button>
 </nav>
 <div class="nav-drawer" id="nav-drawer">
-  <a href="thinking.html">Thinking</a>
-  <a href="resume.html">Resume</a>
-  <a href="coaching.html">Coaching</a>
-  <a href="connect.html">Connect</a>
+  <a href="/thinking">Thinking</a>
+  <a href="/resume">Resume</a>
+  <a href="/coaching">Coaching</a>
+  <a href="/connect">Connect</a>
   <a href="/th/privacy">TH</a>
 </div>
 
 <main class="page">
   <div class="article-wrap">
-    <a href="index.html" class="article-back">← Home</a>
+    <a href="/" class="article-back">← Home</a>
     <h1 class="article-title">Privacy</h1>
     <p class="article-intro">This page explains what is collected, why, and how it is treated.</p>
     <div class="article-body">
