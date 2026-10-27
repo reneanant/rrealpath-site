@@ -603,6 +603,11 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 
 /* Mobile tightening for the above */
 @media (max-width: 768px) {
+  /* Item 4d — captions on phones: credit drops to its own line so long captions keep the full width */
+  body .article-lead-caption { flex-wrap: wrap; align-items: flex-start; row-gap: 0.15rem; }
+  body .article-lead-bar { margin-top: 0.3em; }
+  body .article-lead-name { flex: 1 1 0; min-width: 0; }
+  body .article-lead-credit { flex-basis: 100%; padding-left: calc(2px + 0.75rem); }
   body .article-intro { font-size: 1.25rem; }
   body .article-share-links a,
   body .article-share-copy { font-size: 0.82rem; padding: 0.6rem 1.1rem; }
