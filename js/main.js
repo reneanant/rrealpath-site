@@ -83,9 +83,11 @@ copy.appendChild(a);
 
 // ── GA4 article read-tracking: section_view (>=5s dwell) + article_complete
 (function(){
-if(!/\/article-/.test(location.pathname)) return;
+// Runs on any page built from the article template (article body + share bar):
+// /article-* and the monthly /intelligence-* issues. Was a URL test on "/article-",
+// which skipped /intelligence-october-2026 (a2 order 84, 4 Nov 2026).
 var body = document.querySelector('.article-body');
-if(!body || typeof gtag !== 'function') return;
+if(!body || !document.querySelector('.article-share') || typeof gtag !== 'function') return;
 var heads = [].slice.call(body.querySelectorAll('h2'));
 if(!heads.length) return;
 var title = ((document.querySelector('.article-title') || {}).textContent || document.title || '').trim().slice(0,100);
