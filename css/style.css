@@ -793,3 +793,8 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
   .testimonial { padding-left: 2.2rem; }
   .testimonial::before { font-size: 4rem; top: -0.8rem; }
 }
+
+/* Coach — The Big Picture / The Long View: standard-size images (text column width, image under its text), Ren 13 Nov 15:44 */
+.artifact { display: block; max-width: 760px; padding: 3rem 0; }
+.artifact-text { margin-bottom: 1.6rem; }
+.artifact--flip .artifact-text { order: 0; }
