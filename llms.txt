@@ -1,21 +1,28 @@
 # rrealpath
 
-> Leadership and executive coaching for a wide range of business challenges in Southeast Asia's cross-cultural work environments. Founded by René Anant Feddersen, based in Chiang Mai, Thailand. Coaching is delivered in Thai, German, or English — the language the leader thinks in. The site is fully bilingual (English and Thai).
+> Executive coaching by René Anant Feddersen for senior executives and leaders navigating a diverse and fast-changing global business environment. The coaching establishes the big picture and builds the long view. Based in Chiang Mai, Thailand; working across Southeast Asia and the world.
 
 ## Core pages
-- [Home](https://rrealpath.com/): positioning and overview
-- [Coaching](https://rrealpath.com/coaching): the six areas where coaching earns its place, fluency across contexts, and the engagement structure
-- [Resume](https://rrealpath.com/resume): René Anant Feddersen — experience, how the coaching is grounded, credentials
-- [Connect](https://rrealpath.com/connect): two paths — for leaders/executives, and for HR/people/L&D placing a coach. Contact: coach@rrealpath.com
-- [Thinking](https://rrealpath.com/thinking): editorial writing on decision-making, leadership, relationships, and cross-cultural work
+- [Home](https://rrealpath.com/): who René coaches and the focus of the coaching — the big picture and the long view
+- [Insights](https://rrealpath.com/insights): rrealpath articles — mainstream narratives explored, hidden assumptions questioned; leadership, decision-making, coaching, culture and the monthly AI Insights issue
+- [Coach](https://rrealpath.com/coach): the coaching process (the Big Picture and the Long View), René's resume, a client testimonial and background
+- [Connect](https://rrealpath.com/connect): write to René — for executives and entrepreneurs, and for HR, people and L&D placing a coach. Contact: coach@rrealpath.com
 
-## Thai (ไทย)
-- [หน้าแรก](https://rrealpath.com/th/)
-- [การโค้ช](https://rrealpath.com/th/coaching)
-- [ประวัติ](https://rrealpath.com/th/resume)
-- [ติดต่อ](https://rrealpath.com/th/connect)
+## Articles
+- [AI Adoption and What the Stats Conceal](https://rrealpath.com/intelligence-october-2026): AI Insights — October 2026
+- [Coaching Today and Where It Goes Next](https://rrealpath.com/article-08-part-3): The Origins of Coaching, part III
+- [How Coaching Became a Mainstream Profession](https://rrealpath.com/article-08-part-2): The Origins of Coaching, part II
+- [How Business Coaching Was Discovered](https://rrealpath.com/article-08-part-1): The Origins of Coaching, part I
+- [The Real Amazing Thailand](https://rrealpath.com/article-07-part-3): The Cross-Cultural Laboratory, part III
+- [Why the Cultural Rulebook Is Just the Starting Point](https://rrealpath.com/article-07-part-2): The Cross-Cultural Laboratory, part II
+- [A Third-Culture Childhood in Thailand](https://rrealpath.com/article-07-part-1): The Cross-Cultural Laboratory, part I
+- [Thinking Clearly in the New Media & Technology Bubble](https://rrealpath.com/article-06): AI Insights — June 2026
+- [Why Every Decision Is Bounded by What We Cannot See](https://rrealpath.com/article-05): The Availability of Critical Information in Decision Making
+- [Overcoming Inertia and Beating the Odds through Knowledge, Language and Leverage](https://rrealpath.com/article-04): What Makes a Leader Sufficient
+- [How Attention and Energy Influence the Way We Interact](https://rrealpath.com/article-03): The Real Pathology of Everyday Relationships
+- [How Proximity, Pace and Scale Shape Our Perception of Reality](https://rrealpath.com/article-02): What You Can't See and How It Undermines You
+- [Why Do I Need a Coach](https://rrealpath.com/article-01): The 3 most compelling reasons for choosing to work with a coach
 
 ## Notes
-- Differentiator: native-speaker fluency in Thai, German and English, and fluency across SME and multinational contexts in Southeast Asia.
-- Cross-cultural framing is a two-sided Thai–Western axis.
+- The site is in English.
 - Contact: coach@rrealpath.com
