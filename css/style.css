@@ -865,3 +865,14 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 /* Insights top spacing = Landing (Ren 14 Nov 16:29) */
 .ins-wrap { padding-top: 3.2rem; }
 @media (max-width: 768px) { .ins-wrap { padding-top: 2.2rem; } }
+
+/* Coach (Ren 14 Nov 16:40): testimonial first; two-tone lead (Steel Blue upright → ink italic); short red rule before the "two live artefacts" line; top spacing = Landing */
+.coach-wrap { padding-top: 3.2rem; }
+.coach-section--top { padding-top: 0; padding-bottom: 3rem; }
+.coach-lead { font-family: var(--font-serif); font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem); line-height: 1.45; }
+.coach-intro p.coach-lead { color: var(--ink); }
+.coach-lead .lp-vision-a { color: var(--blue); }
+.coach-lead .lp-vision-b { color: var(--ink); font-style: italic; }
+.coach-intro p.coach-pivot { margin-top: 2.4rem; }
+.coach-intro p.coach-pivot::before { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-bottom: 1.3rem; }
+@media (max-width: 768px) { .coach-wrap { padding-top: 2.2rem; } }
