@@ -891,3 +891,8 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .artifact:not(.artifact--flip) { padding-bottom: 1.2rem; }
 .artifact--flip { padding-top: 1.6rem; }
 .artifact--flip::after { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-top: 3rem; }
+.artifact--flip { padding-bottom: 0; }
+.artifact--flip + .stand { padding-top: 3rem; }
+/* Coach: less space between the portrait block and RESUME (Ren 14 Nov 16:53) */
+.stand { padding-bottom: 1.4rem; }
+.stand + .coach-section { padding-top: 1.6rem; }
