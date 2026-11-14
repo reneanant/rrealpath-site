@@ -835,3 +835,8 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .lp-vision { font-family: var(--font-serif); font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem); line-height: 1.45; margin: 0 0 2.8rem; }
 .lp-vision-a { color: var(--blue); }
 .lp-vision-b { color: var(--ink); font-style: italic; }
+
+/* Closing statement = the vision sentences (Ren 14 Nov 16:12): first Steel Blue upright, second ink italic; size, red rule and signature as before */
+.v2-statement--vision { font-style: normal; }
+.v2-statement--vision .lp-vision-a { color: var(--blue); font-style: normal; }
+.v2-statement--vision .lp-vision-b { color: var(--ink); font-style: italic; }
