@@ -798,3 +798,25 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .artifact { display: block; max-width: 760px; padding: 3rem 0; }
 .artifact-text { margin-bottom: 1.6rem; }
 .artifact--flip .artifact-text { order: 0; }
+
+/* Landing first screen (Ren 14 Nov 12:11): first line, eagle beside the three questions, name as a signature */
+.lp-top { max-width: var(--max-wide); margin: 0 auto; padding: 3.2rem 3rem 0; }
+.lp-h1 { font-family: var(--font-serif); font-weight: 400; color: var(--blue); font-size: clamp(1.6rem, 1rem + 1.7vw, 2.45rem); line-height: 1.22; letter-spacing: -0.005em; max-width: 920px; margin: 0 0 2rem; }
+.lp-first { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; align-items: center; }
+.lp-hero { margin: 0; }
+.lp-hero img { display: block; width: 100%; height: auto; }
+.lp-q p { font-family: var(--font-serif); font-size: clamp(1.25rem, 0.95rem + 0.8vw, 1.6rem); line-height: 1.35; color: var(--ink); padding: 1rem 0; border-top: 1px solid var(--rule); margin: 0; }
+.lp-q p:last-of-type { border-bottom: 1px solid var(--rule); }
+.lp-q p.lp-sign { border: none; }
+.lp-sign { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mid); }
+.lp-q .lp-sign { font-family: var(--font-mono); font-size: 0.74rem; line-height: 1.5; padding: 1.2rem 0 0; display: flex; align-items: center; gap: 0.7rem; color: var(--ink-mid); }
+.lp-q .lp-sign::before { content: ""; width: 1.8rem; height: 2px; background: var(--red); flex-shrink: 0; }
+.lp-sign--top { margin: -1rem 0 2rem; }
+body.name-q .lp-sign--top, body:not(.name-q):not(.name-top) .lp-sign--top { display: none; }
+body.name-top .lp-q .lp-sign { display: none; }
+.v2-lead em { font-style: italic; color: var(--blue); }
+@media (max-width: 768px) {
+  .lp-top { padding: 2.2rem 1.5rem 0; }
+  .lp-first { grid-template-columns: 1fr; gap: 1.2rem; }
+  .lp-h1 { margin-bottom: 1.4rem; }
+}
