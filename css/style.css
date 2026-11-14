@@ -821,3 +821,7 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .lp-q p:nth-last-of-type(2) { border-bottom: none; }
 .lp-q p:last-of-type { border-bottom: 1px solid var(--rule); }
 .lp-sign--end { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; margin: -1rem 0 2.6rem; }
+
+/* Landing: one soft grey line between the questions and "Regain clarity" — no second rule, no white gap (Ren 14 Nov 13:08) */
+.lp-q + .v2-home { padding-top: 0; }
+.lp-q + .v2-home .v2-block--ruled { border-top: none; margin-top: 0; padding-top: 2.4rem; }
