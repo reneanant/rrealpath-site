@@ -865,3 +865,37 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 /* Insights top spacing = Landing (Ren 14 Nov 16:29) */
 .ins-wrap { padding-top: 3.2rem; }
 @media (max-width: 768px) { .ins-wrap { padding-top: 2.2rem; } }
+
+/* Coach (Ren 14 Nov 16:40): testimonial first; two-tone lead (Steel Blue upright → ink italic); short red rule before the "two live artefacts" line; top spacing = Landing */
+.coach-wrap { padding-top: 3.2rem; }
+.coach-section--top { padding-top: 0; padding-bottom: 3rem; }
+.coach-lead { font-family: var(--font-serif); font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem); line-height: 1.45; }
+.coach-intro p.coach-lead { color: var(--ink); }
+.coach-lead .lp-vision-a { color: var(--blue); }
+.coach-lead .lp-vision-b { color: var(--ink); font-style: italic; }
+.coach-intro p.coach-pivot { margin-top: 2.4rem; }
+.coach-intro p.coach-pivot::before { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-bottom: 1.3rem; }
+@media (max-width: 768px) { .coach-wrap { padding-top: 2.2rem; } }
+
+/* Coach (Ren 14 Nov 16:45): John's signature in the same format as René's; red rule after the testimonial; "two live artefacts" line upright, same section as the lead */
+.testimonial p.testi-sign { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; margin-top: 1.6rem; font-style: normal; }
+.testimonial p.testi-sign .sn { font-family: var(--font-serif); font-style: italic; font-size: 1.55rem; color: var(--blue); }
+.testimonial p.testi-sign .sd { font-family: var(--font-serif); font-style: normal; font-size: 1.3rem; color: var(--ink-muted); }
+.testimonial p.testi-sign .st { font-family: var(--font-serif); font-style: normal; font-variant: small-caps; text-transform: lowercase; font-size: 1.3rem; letter-spacing: 0.12em; color: var(--ink-mid); }
+.coach-intro::before { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-bottom: 1.6rem; }
+.coach-intro p.coach-pivot { font-style: normal; margin-top: 1.3rem; }
+.coach-intro p.coach-pivot::before { content: none; }
+/* Coach testimonial text in ink (Ren 14 Nov 16:49); quote mark and John's name stay Steel Blue */
+.testimonial p:not(.testi-sign) { color: var(--ink); }
+/* Coach (Ren 14 Nov 16:52): tighter gap Big Picture image → Long View title; short red rule after the Long View image */
+.artifact:not(.artifact--flip) { padding-bottom: 1.2rem; }
+.artifact--flip { padding-top: 1.6rem; }
+.artifact--flip::after { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-top: 3rem; }
+.artifact--flip { padding-bottom: 0; }
+.artifact--flip + .stand { padding-top: 3rem; }
+/* Coach: less space between the portrait block and RESUME (Ren 14 Nov 16:53) */
+.stand { padding-bottom: 1.4rem; }
+.stand + .coach-section { padding-top: 1.6rem; }
+/* Coach: less space before "My background" and "Why I chose business" (Ren 14 Nov 16:55) */
+.coach-wrap > .coach-section { padding-bottom: 1.2rem; }
+.coach-section + .coach-section { padding-top: 1.8rem; }
