@@ -111,10 +111,10 @@
 </footer>
 
 <script>
-/* Preview only (Ren to choose): ?name=top moves the name under the first line; ?font=1|2|3|4 switches the name style. Production: name under the questions, style 1. */
+/* Preview only (Ren to choose): ?name=top moves the name under the first line; ?role=a|b|c switches the "Executive coach" style. Production: name under the questions, style 2, role a. */
 (function(){var h=location.hostname,p=new URLSearchParams(location.search),prod=(h==='rrealpath.com'||h==='www.rrealpath.com');
-var top=!prod&&p.get('name')==='top';var f=(!prod&&/^[1-4]$/.test(p.get('font')||''))?p.get('font'):'1';
-document.body.classList.add(top?'name-top':'name-q','sig-'+f);})();
+var top=!prod&&p.get('name')==='top';var r=(!prod&&/^[abc]$/.test(p.get('role')||''))?p.get('role'):'a';
+document.body.classList.add(top?'name-top':'name-q','sig-2','role-'+r);})();
 </script>
 <script src="/js/main.js?v=2026-11-13"></script>
 </body>

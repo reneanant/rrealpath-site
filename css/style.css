@@ -851,3 +851,12 @@ body.sig-4 .lp-sign .sd, body.sig-4 .lp-sign .st { font-family: var(--font-sans)
 
 /* Landing top line = the same size and weight as the blue page titles on Insights / Connect (Ren 14 Nov 12:29) */
 .lp-h1 { font-size: clamp(2rem, 1.3rem + 2.4vw, 3.3rem); line-height: 1.12; letter-spacing: -0.01em; font-weight: 400; }
+
+/* "Executive coach" beside the blue italic name — three styles for Ren (preview ?role=a|b|c) */
+/* a — Cormorant small capitals, spaced, mid ink */
+body.sig-2.role-a .lp-sign .st { font-family: var(--font-serif); font-style: normal; font-variant: small-caps; text-transform: lowercase; font-size: 1.3rem; letter-spacing: 0.12em; color: var(--ink-mid); }
+/* b — Jost, sentence case, light grey */
+body.sig-2.role-b .lp-sign .st { font-family: var(--font-sans); font-weight: 300; text-transform: none; font-size: 1rem; letter-spacing: 0.04em; color: var(--ink-muted); }
+/* c — Cormorant italic, smaller, mid ink */
+body.sig-2.role-c .lp-sign .st { font-family: var(--font-serif); font-style: italic; text-transform: none; font-size: 1.15rem; letter-spacing: 0; color: var(--ink-mid); }
+body.sig-2 .lp-sign .sd { font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink-muted); letter-spacing: 0; padding: 0 0.15rem; }
