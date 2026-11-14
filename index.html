@@ -72,14 +72,14 @@
 <main class="page">
 <div class="lp-top">
   <h1 class="lp-h1">Executive coaching for senior leaders and entrepreneurs navigating AI and the fast-changing global business environment.</h1>
-  <p class="lp-sign lp-sign--top"><span class="sn">Ren&eacute; Anant Feddersen</span><span class="sd"> &middot; </span><span class="st">Coach</span><span class="st2">Executive and Entrepreneur Coach</span></p>
+  <p class="lp-sign lp-sign--top"><span class="sn">Ren&eacute; Anant Feddersen</span><span class="sd"> &middot; </span><span class="st">Coach</span><span class="st2">Executive and Entrepreneur Coach</span><span class="st3">Executive &amp; Entrepreneur Coach</span></p>
 </div>
 <figure class="v2-hero"><img src="/images/home-01.jpg" width="2400" height="1350" alt="A bald eagle in flight, wings fully spread, against a pale sky" fetchpriority="high" /><figcaption class="cap"><span class="cap-bar"></span><span class="cap-title">In Flight</span><span class="cap-credit">Frank Cone</span></figcaption></figure>
 <div class="lp-q">
   <p>Does the present noise isolate you or engage you?</p>
   <p>What does uncertainty look like in your business?</p>
   <p>Does falling behind require you to move faster or to dig deeper?</p>
-  <p class="lp-sign lp-sign--q"><span class="sn">Ren&eacute; Anant Feddersen</span><span class="sd"> &middot; </span><span class="st">Coach</span><span class="st2">Executive and Entrepreneur Coach</span></p>
+  <p class="lp-sign lp-sign--q"><span class="sn">Ren&eacute; Anant Feddersen</span><span class="sd"> &middot; </span><span class="st">Coach</span><span class="st2">Executive and Entrepreneur Coach</span><span class="st3">Executive &amp; Entrepreneur Coach</span></p>
 </div>
 <div class="v2-home">
   <div class="v2-block v2-block--ruled">
@@ -111,10 +111,10 @@
 </footer>
 
 <script>
-/* Preview only (Ren to choose): ?name=top moves the name under the first line; ?role=a|b|c switches the "Executive coach" style. ?title=full puts the full title on its own line under the name. Production: name under the questions, short title, style 2, role a. */
+/* Preview only (Ren to choose): ?name=top moves the name under the first line; ?role=a|b|c switches the "Executive coach" style. ?title=full | amp puts the full title ("and" or "&") on its own line under the name. Production: name under the questions, short title, style 2, role a. */
 (function(){var h=location.hostname,p=new URLSearchParams(location.search),prod=(h==='rrealpath.com'||h==='www.rrealpath.com');
 var top=!prod&&p.get('name')==='top';var r=(!prod&&/^[abc]$/.test(p.get('role')||''))?p.get('role'):'a';
-var full=!prod&&p.get('title')==='full';document.body.classList.add(top?'name-top':'name-q','sig-2','role-'+r,full?'title-full':'title-short');})();
+var t=prod?'short':({full:'full',amp:'amp'}[p.get('title')]||'short');document.body.classList.add(top?'name-top':'name-q','sig-2','role-'+r,'title-'+t);})();
 </script>
 <script src="/js/main.js?v=2026-11-13"></script>
 </body>
