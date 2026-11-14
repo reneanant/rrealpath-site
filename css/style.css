@@ -828,3 +828,5 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 
 /* Landing top line: second half in ink (Ren 14 Nov 15:20) */
 .lp-h1 .lp-h1-ink { color: var(--ink); }
+/* Landing top line second half = the Insights title's italic format (Ren 14 Nov 15:25) */
+.lp-h1 .lp-h1-ink { font-style: italic; color: var(--ink-mid); }
