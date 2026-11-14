@@ -896,3 +896,6 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 /* Coach: less space between the portrait block and RESUME (Ren 14 Nov 16:53) */
 .stand { padding-bottom: 1.4rem; }
 .stand + .coach-section { padding-top: 1.6rem; }
+/* Coach: less space before "My background" and "Why I chose business" (Ren 14 Nov 16:55) */
+.coach-wrap > .coach-section { padding-bottom: 1.2rem; }
+.coach-section + .coach-section { padding-top: 1.8rem; }
