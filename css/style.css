@@ -887,3 +887,7 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .coach-intro p.coach-pivot::before { content: none; }
 /* Coach testimonial text in ink (Ren 14 Nov 16:49); quote mark and John's name stay Steel Blue */
 .testimonial p:not(.testi-sign) { color: var(--ink); }
+/* Coach (Ren 14 Nov 16:52): tighter gap Big Picture image → Long View title; short red rule after the Long View image */
+.artifact:not(.artifact--flip) { padding-bottom: 1.2rem; }
+.artifact--flip { padding-top: 1.6rem; }
+.artifact--flip::after { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-top: 3rem; }
