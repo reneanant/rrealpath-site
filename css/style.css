@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,700&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -856,4 +856,7 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .post:hover .post-title, .post:focus-visible .post-title { color: var(--blue); }
 .post-sub { font-size: 1.09rem; }
 .post--ai .post-sub { font-size: 1.25rem; }
-.series-head .s-name { font-weight: 600; font-style: italic; }
+.series-head .s-name { font-weight: 700; font-style: italic; }
+/* Insights cards: subtitle sits close under its title (Ren 14 Nov 16:25) */
+.post-title { margin-bottom: 0; padding-bottom: 0.2rem; }
+.post-sub { margin-top: 0.3rem; }
