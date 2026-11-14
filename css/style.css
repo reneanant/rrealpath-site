@@ -820,3 +820,10 @@ body.name-top .lp-q .lp-sign { display: none; }
   .lp-first { grid-template-columns: 1fr; gap: 1.2rem; }
   .lp-h1 { margin-bottom: 1.4rem; }
 }
+
+/* Landing (Ren 14 Nov 12:25): full-width eagle; the three questions follow the image */
+.lp-top { padding-bottom: 0; }
+.lp-h1 { margin-bottom: 2.2rem; }
+.lp-q { max-width: 760px; margin: 0 auto; padding: 2.8rem 3rem 0; }
+.lp-q p { font-size: clamp(1.4rem, 1rem + 1.1vw, 1.95rem); padding: 1.1rem 0; }
+@media (max-width: 768px) { .lp-q { padding: 2rem 1.5rem 0; } }
