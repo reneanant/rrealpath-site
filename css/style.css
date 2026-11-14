@@ -799,84 +799,20 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .artifact-text { margin-bottom: 1.6rem; }
 .artifact--flip .artifact-text { order: 0; }
 
-/* Landing first screen (Ren 14 Nov 12:11): first line, eagle beside the three questions, name as a signature */
-.lp-top { max-width: var(--max-wide); margin: 0 auto; padding: 3.2rem 3rem 0; }
-.lp-h1 { font-family: var(--font-serif); font-weight: 400; color: var(--blue); font-size: clamp(1.6rem, 1rem + 1.7vw, 2.45rem); line-height: 1.22; letter-spacing: -0.005em; max-width: 920px; margin: 0 0 2rem; }
-.lp-first { display: grid; grid-template-columns: 1.25fr 1fr; gap: 3rem; align-items: center; }
-.lp-hero { margin: 0; }
-.lp-hero img { display: block; width: 100%; height: auto; }
-.lp-q p { font-family: var(--font-serif); font-size: clamp(1.25rem, 0.95rem + 0.8vw, 1.6rem); line-height: 1.35; color: var(--ink); padding: 1rem 0; border-top: 1px solid var(--rule); margin: 0; }
-.lp-q p:last-of-type { border-bottom: 1px solid var(--rule); }
-.lp-q p.lp-sign { border: none; }
-.lp-sign { font-family: var(--font-mono); font-size: 0.74rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mid); }
-.lp-q .lp-sign { font-family: var(--font-mono); font-size: 0.74rem; line-height: 1.5; padding: 1.2rem 0 0; display: flex; align-items: center; gap: 0.7rem; color: var(--ink-mid); }
-.lp-q .lp-sign::before { content: ""; width: 1.8rem; height: 2px; background: var(--red); flex-shrink: 0; }
-.lp-sign--top { margin: -1rem 0 2rem; }
-body.name-q .lp-sign--top, body:not(.name-q):not(.name-top) .lp-sign--top { display: none; }
-body.name-top .lp-q .lp-sign { display: none; }
+/* ── LANDING first screen (Ren 14 Nov 2026): coaching line in the text column at page-title size → full-width eagle → three questions → signature ── */
+.lp-top { max-width: 760px; margin: 0 auto; padding: 3.2rem 3rem 0; }
+.lp-h1 { font-family: var(--font-serif); font-weight: 400; color: var(--blue); font-size: clamp(2rem, 1.3rem + 2.4vw, 3.3rem); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 2.2rem; }
+.lp-q { max-width: 760px; margin: 0 auto; padding: 2.8rem 3rem 0; }
+.lp-q p { font-family: var(--font-serif); font-size: clamp(1.4rem, 1rem + 1.1vw, 1.95rem); line-height: 1.35; color: var(--ink); padding: 1.1rem 0; border-top: 1px solid var(--rule); margin: 0; }
+.lp-q p:nth-last-of-type(2) { border-bottom: 1px solid var(--rule); }
+.lp-q p.lp-sign { border: none; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; padding: 1.4rem 0 0; }
+.lp-sign::before { content: ""; width: 1.8rem; height: 2px; background: var(--red); align-self: center; margin-right: 0.3rem; }
+.lp-sign .sn { font-family: var(--font-serif); font-style: italic; font-size: 1.55rem; color: var(--blue); }
+.lp-sign .sd { font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink-muted); }
+.lp-sign .st { font-family: var(--font-serif); font-variant: small-caps; text-transform: lowercase; font-size: 1.3rem; letter-spacing: 0.12em; color: var(--ink-mid); }
 .v2-lead em { font-style: italic; color: var(--blue); }
 @media (max-width: 768px) {
   .lp-top { padding: 2.2rem 1.5rem 0; }
-  .lp-first { grid-template-columns: 1fr; gap: 1.2rem; }
-  .lp-h1 { margin-bottom: 1.4rem; }
+  .lp-q { padding: 2rem 1.5rem 0; }
 }
-
-/* Landing (Ren 14 Nov 12:25): full-width eagle; the three questions follow the image */
-.lp-top { padding-bottom: 0; }
-.lp-h1 { margin-bottom: 2.2rem; }
-.lp-q { max-width: 760px; margin: 0 auto; padding: 2.8rem 3rem 0; }
-.lp-q p { font-size: clamp(1.4rem, 1rem + 1.1vw, 1.95rem); padding: 1.1rem 0; }
-@media (max-width: 768px) { .lp-q { padding: 2rem 1.5rem 0; } }
-
-/* Landing top text in the text column (Ren 14 Nov 12:28) */
-.lp-top { max-width: 760px; padding: 3.2rem 3rem 0; }
-@media (max-width: 768px) { .lp-top { padding: 2.2rem 1.5rem 0; } }
-
-/* Name signature — four styles for Ren to choose (preview ?font=1..4) */
-.lp-sign .sn, .lp-sign .st, .lp-sign .sd { font: inherit; letter-spacing: inherit; text-transform: inherit; color: inherit; }
-/* 1 — DM Mono capitals (as built) */
-/* 2 — Cormorant italic name in Steel Blue, mono role */
-body.sig-2 .lp-sign .sn { font-family: var(--font-serif); font-style: italic; font-size: 1.55rem; letter-spacing: 0; text-transform: none; color: var(--blue); }
-body.sig-2 .lp-sign .st { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-mid); }
-/* 3 — Cormorant name in ink, role on its own line in small mono capitals */
-body.sig-3 .lp-sign { flex-wrap: wrap; }
-body.sig-3 .lp-sign .sn { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 500; letter-spacing: 0.01em; text-transform: none; color: var(--ink); }
-body.sig-3 .lp-sign .sd { display: none; }
-body.sig-3 .lp-sign .st { flex-basis: 100%; font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); padding-left: 2.5rem; margin-top: 0.2rem; }
-body.sig-3 .lp-sign--top .st { padding-left: 0; }
-/* 4 — Jost spaced capitals, name in ink, role lighter */
-body.sig-4 .lp-sign .sn { font-family: var(--font-sans); font-weight: 500; font-size: 0.86rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink); }
-body.sig-4 .lp-sign .sd, body.sig-4 .lp-sign .st { font-family: var(--font-sans); font-weight: 400; font-size: 0.86rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-muted); }
-.lp-sign--top { display: flex; align-items: baseline; gap: 0; flex-wrap: wrap; }
-
-/* Landing top line = the same size and weight as the blue page titles on Insights / Connect (Ren 14 Nov 12:29) */
-.lp-h1 { font-size: clamp(2rem, 1.3rem + 2.4vw, 3.3rem); line-height: 1.12; letter-spacing: -0.01em; font-weight: 400; }
-
-/* "Executive coach" beside the blue italic name — three styles for Ren (preview ?role=a|b|c) */
-/* a — Cormorant small capitals, spaced, mid ink */
-body.sig-2.role-a .lp-sign .st { font-family: var(--font-serif); font-style: normal; font-variant: small-caps; text-transform: lowercase; font-size: 1.3rem; letter-spacing: 0.12em; color: var(--ink-mid); }
-/* b — Jost, sentence case, light grey */
-body.sig-2.role-b .lp-sign .st { font-family: var(--font-sans); font-weight: 300; text-transform: none; font-size: 1rem; letter-spacing: 0.04em; color: var(--ink-muted); }
-/* c — Cormorant italic, smaller, mid ink */
-body.sig-2.role-c .lp-sign .st { font-family: var(--font-serif); font-style: italic; text-transform: none; font-size: 1.15rem; letter-spacing: 0; color: var(--ink-mid); }
-body.sig-2 .lp-sign .sd { font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink-muted); letter-spacing: 0; padding: 0 0.15rem; }
-
-/* Signature title: short "Coach" beside the name (default) or the full title on its own line (preview ?title=full) */
-.lp-sign .st2 { display: none; }
-body.title-full .lp-sign { flex-wrap: wrap; }
-body.title-full .lp-sign .sd, body.title-full .lp-sign .st { display: none; }
-body.title-full .lp-sign .st2 { display: block; flex-basis: 100%; padding-left: 2.5rem; margin-top: 0.15rem; font-family: var(--font-serif); font-style: normal; font-variant: small-caps; text-transform: lowercase; font-size: 1.3rem; letter-spacing: 0.12em; color: var(--ink-mid); line-height: 1.3; }
-body.title-full .lp-sign--top .st2 { padding-left: 0; }
-body.title-full .lp-sign .st2 { margin-top: -0.1rem; }
-@media (max-width: 768px) { body.title-full .lp-sign .st2 { font-size: 1.05rem; letter-spacing: 0.07em; padding-left: 2.5rem; } }
-@media (max-width: 768px) { body.title-full .lp-sign .st2 { font-size: 0.95rem; letter-spacing: 0.05em; } }
-@media (max-width: 420px) { body.title-full .lp-sign .st2 { padding-left: 0; } }
-
-/* Third option (Ren 12:38): "Executive & Entrepreneur Coach" on its own line, slightly larger (preview ?title=amp) */
-.lp-sign .st3 { display: none; }
-body.title-amp .lp-sign { flex-wrap: wrap; }
-body.title-amp .lp-sign .sd, body.title-amp .lp-sign .st { display: none; }
-body.title-amp .lp-sign .st3 { display: block; flex-basis: 100%; padding-left: 2.5rem; margin-top: -0.05rem; font-family: var(--font-serif); font-style: normal; font-variant: small-caps; text-transform: lowercase; font-size: 1.5rem; letter-spacing: 0.12em; color: var(--ink-mid); line-height: 1.3; }
-body.title-amp .lp-sign--top .st3 { padding-left: 0; }
-@media (max-width: 768px) { body.title-amp .lp-sign .st3 { font-size: 1.15rem; letter-spacing: 0.07em; } }
-@media (max-width: 420px) { body.title-amp .lp-sign .st3 { padding-left: 0; } }
+.lp-top + .v2-hero .cap { max-width: 760px; }
