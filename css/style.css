@@ -816,3 +816,8 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
   .lp-q { padding: 2rem 1.5rem 0; }
 }
 .lp-top + .v2-hero .cap { max-width: 760px; }
+
+/* Signature under the closing statement (Ren 14 Nov 12:40) */
+.lp-q p:nth-last-of-type(2) { border-bottom: none; }
+.lp-q p:last-of-type { border-bottom: 1px solid var(--rule); }
+.lp-sign--end { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; margin: -1rem 0 2.6rem; }
