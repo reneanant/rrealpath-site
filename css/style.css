@@ -885,3 +885,5 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .coach-intro::before { content: ""; display: block; width: 3rem; height: 2px; background: var(--red); margin-bottom: 1.6rem; }
 .coach-intro p.coach-pivot { font-style: normal; margin-top: 1.3rem; }
 .coach-intro p.coach-pivot::before { content: none; }
+/* Coach testimonial text in ink (Ren 14 Nov 16:49); quote mark and John's name stay Steel Blue */
+.testimonial p:not(.testi-sign) { color: var(--ink); }
