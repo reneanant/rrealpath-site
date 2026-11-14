@@ -830,3 +830,8 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .lp-h1 .lp-h1-ink { color: var(--ink); }
 /* Landing top line second half = the Insights title's italic format (Ren 14 Nov 15:25) */
 .lp-h1 .lp-h1-ink { font-style: italic; color: var(--ink-mid); }
+
+/* Landing: vision lines after the three points (Ren 14 Nov 16:08) — first sentence Steel Blue upright, second ink italic */
+.lp-vision { font-family: var(--font-serif); font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem); line-height: 1.45; margin: 0 0 2.8rem; }
+.lp-vision-a { color: var(--blue); }
+.lp-vision-b { color: var(--ink); font-style: italic; }
