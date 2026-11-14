@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=DM+Mono:wght@300;400&family=Jost:wght@300;400;500&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -849,4 +849,11 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .ins-credo .lp-vision-b { color: var(--ink); font-style: italic; }
 .ins-credo .lp-sign { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; margin: 1.3rem 0 0; }
 .ins-intro { margin-bottom: 2.6rem; }
-body.credo-name .ins-credo-sig--credo, body.credo-label .ins-credo-sig--name, body:not(.credo-name):not(.credo-label) .ins-credo-sig--credo { display: none; }
+
+/* Insights cards (Ren 14 Nov 16:23): AI Insights margin rule red · titles ink, Steel Blue on hover · subtitles +2pt · series names bold italic */
+.post--ai { border-left-color: var(--red); }
+.post-title { color: var(--ink); transition: color 0.2s; }
+.post:hover .post-title, .post:focus-visible .post-title { color: var(--blue); }
+.post-sub { font-size: 1.09rem; }
+.post--ai .post-sub { font-size: 1.25rem; }
+.series-head .s-name { font-weight: 600; font-style: italic; }
