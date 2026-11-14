@@ -825,3 +825,6 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 /* Landing: one soft grey line between the questions and "Regain clarity" — no second rule, no white gap (Ren 14 Nov 13:08) */
 .lp-q + .v2-home { padding-top: 0; }
 .lp-q + .v2-home .v2-block--ruled { border-top: none; margin-top: 0; padding-top: 2.4rem; }
+
+/* Landing top line: second half in ink (Ren 14 Nov 15:20) */
+.lp-h1 .lp-h1-ink { color: var(--ink); }
