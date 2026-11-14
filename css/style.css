@@ -798,3 +798,26 @@ body .article-teaser strong { color: var(--ink-faint); font-weight: 400; }
 .artifact { display: block; max-width: 760px; padding: 3rem 0; }
 .artifact-text { margin-bottom: 1.6rem; }
 .artifact--flip .artifact-text { order: 0; }
+
+/* ── LANDING first screen (Ren 14 Nov 2026): coaching line in the text column at page-title size → full-width eagle → three questions → signature ── */
+.lp-top { max-width: 760px; margin: 0 auto; padding: 3.2rem 3rem 0; }
+.lp-h1 { font-family: var(--font-serif); font-weight: 400; color: var(--blue); font-size: clamp(2rem, 1.3rem + 2.4vw, 3.3rem); line-height: 1.12; letter-spacing: -0.01em; margin: 0 0 2.2rem; }
+.lp-q { max-width: 760px; margin: 0 auto; padding: 2.8rem 3rem 0; }
+.lp-q p { font-family: var(--font-serif); font-size: clamp(1.4rem, 1rem + 1.1vw, 1.95rem); line-height: 1.35; color: var(--ink); padding: 1.1rem 0; border-top: 1px solid var(--rule); margin: 0; }
+.lp-q p:nth-last-of-type(2) { border-bottom: 1px solid var(--rule); }
+.lp-q p.lp-sign { border: none; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; padding: 1.4rem 0 0; }
+.lp-sign::before { content: ""; width: 1.8rem; height: 2px; background: var(--red); align-self: center; margin-right: 0.3rem; }
+.lp-sign .sn { font-family: var(--font-serif); font-style: italic; font-size: 1.55rem; color: var(--blue); }
+.lp-sign .sd { font-family: var(--font-serif); font-size: 1.3rem; color: var(--ink-muted); }
+.lp-sign .st { font-family: var(--font-serif); font-variant: small-caps; text-transform: lowercase; font-size: 1.3rem; letter-spacing: 0.12em; color: var(--ink-mid); }
+.v2-lead em { font-style: italic; color: var(--blue); }
+@media (max-width: 768px) {
+  .lp-top { padding: 2.2rem 1.5rem 0; }
+  .lp-q { padding: 2rem 1.5rem 0; }
+}
+.lp-top + .v2-hero .cap { max-width: 760px; }
+
+/* Signature under the closing statement (Ren 14 Nov 12:40) */
+.lp-q p:nth-last-of-type(2) { border-bottom: none; }
+.lp-q p:last-of-type { border-bottom: 1px solid var(--rule); }
+.lp-sign--end { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 0.6rem; margin: -1rem 0 2.6rem; }
